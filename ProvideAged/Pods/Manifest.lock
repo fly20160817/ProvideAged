@@ -1,0 +1,89 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - BRPickerView (2.8.1):
+    - BRPickerView/AddressPickerView (= 2.8.1)
+    - BRPickerView/Base (= 2.8.1)
+    - BRPickerView/DatePickerView (= 2.8.1)
+    - BRPickerView/StringPickerView (= 2.8.1)
+  - BRPickerView/AddressPickerView (2.8.1):
+    - BRPickerView/Base
+  - BRPickerView/Base (2.8.1)
+  - BRPickerView/DatePickerView (2.8.1):
+    - BRPickerView/Base
+  - BRPickerView/StringPickerView (2.8.1):
+    - BRPickerView/Base
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - IQKeyboardManager (6.5.6)
+  - JCore (2.7.1)
+  - JPush (4.3.0):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - Masonry (1.1.0)
+  - MJExtension (3.3.0)
+  - MJRefresh (3.7.2)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftAlgorithms (1.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 4.0.1)
+  - BRPickerView (~> 2.8.0)
+  - Charts (~> 4.1.0)
+  - IQKeyboardManager (~> 6.5.6)
+  - JPush (~> 4.3.0)
+  - Masonry (~> 1.1.0)
+  - MJExtension (~> 3.3.0)
+  - MJRefresh (~> 3.7.2)
+  - SDWebImage (~> 5.11.1)
+  - SVProgressHUD (~> 2.2.5)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - BRPickerView
+    - Charts
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftAlgorithms
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  BRPickerView: 2531a2d4d0fea0b57a1c738de215af0f88863a2f
+  Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  JCore: 9d5bda3a172c65bbe14f2806ab0f6246f8a06065
+  JPush: 88d6361fbec4be7c8b55b20b7fe1c292228f6bc2
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 01704cca2b60a214c10761b6491eab74069d68a9
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+
+PODFILE CHECKSUM: ee2d9ecc14f062614921e73443fa2ef01ba20cf4
+
+COCOAPODS: 1.12.1

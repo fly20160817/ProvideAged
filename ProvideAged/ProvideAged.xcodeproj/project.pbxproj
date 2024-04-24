@@ -1,0 +1,2446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0407516726E60485005A97FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407516626E60485005A97FF /* AppDelegate.m */; };
+		0407517226E6048B005A97FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0407517126E6048B005A97FF /* Assets.xcassets */; };
+		0407517526E6048B005A97FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0407517326E6048B005A97FF /* LaunchScreen.storyboard */; };
+		0407517826E6048B005A97FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407517726E6048B005A97FF /* main.m */; };
+		040D47022A9097990063DEC5 /* HealthReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D47002A9097990063DEC5 /* HealthReportViewController.m */; };
+		040D47072A90980B0063DEC5 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D47032A90980B0063DEC5 /* DatePickerView.m */; };
+		040D47082A90980B0063DEC5 /* HealthTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D47052A90980B0063DEC5 /* HealthTitleView.m */; };
+		041311A42AAC047D00A4B4A0 /* FLYFingerprintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041311A32AAC047D00A4B4A0 /* FLYFingerprintViewController.m */; };
+		041311A72AB042F900A4B4A0 /* FLYFingerprintModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041311A62AB042F900A4B4A0 /* FLYFingerprintModel.m */; };
+		041311AA2AB049C600A4B4A0 /* FLYFingerprintTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041311A92AB049C600A4B4A0 /* FLYFingerprintTipsViewController.m */; };
+		041508762771BC3600D58078 /* TGIOT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0476C3782771706F008FAE38 /* TGIOT.framework */; platformFilter = ios; };
+		041508772771BC3600D58078 /* TGIOT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0476C3782771706F008FAE38 /* TGIOT.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0415087C2772C05A00D58078 /* FLYVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415087B2772C05A00D58078 /* FLYVideoListViewController.m */; };
+		041508802772C83300D58078 /* FLYZiGuang.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415087F2772C83300D58078 /* FLYZiGuang.m */; };
+		041508832772C84900D58078 /* FLYZiGuangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 041508822772C84900D58078 /* FLYZiGuangManager.m */; };
+		041508862772C85F00D58078 /* FLYZiGuangNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 041508852772C85F00D58078 /* FLYZiGuangNetwork.m */; };
+		041508892772C8A100D58078 /* FLYZiGuangModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041508882772C8A100D58078 /* FLYZiGuangModel.m */; };
+		0415088B2772CA1400D58078 /* ICINSmartLockSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0415088A2772CA1400D58078 /* ICINSmartLockSDK.framework */; };
+		0415089227741D2200D58078 /* FLYOpenDoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415089127741D2200D58078 /* FLYOpenDoorViewController.m */; };
+		041508952774246700D58078 /* FLYOpenDoorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041508942774246700D58078 /* FLYOpenDoorView.m */; };
+		04150898277452C000D58078 /* FLYOpenDoorMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04150897277452C000D58078 /* FLYOpenDoorMenuView.m */; };
+		0415089C277470AD00D58078 /* FLYTempAuthorizeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415089B277470AD00D58078 /* FLYTempAuthorizeListViewController.m */; };
+		0415089F277561E100D58078 /* FLYBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415089E277561E100D58078 /* FLYBaseCollectionViewController.m */; };
+		041508A627756B2000D58078 /* FLYTempAuthorizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041508A527756B2000D58078 /* FLYTempAuthorizeCell.m */; };
+		042879BB2775B865001069C0 /* FLYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042879BA2775B865001069C0 /* FLYBaseTableViewController.m */; };
+		042879BE2775B894001069C0 /* FLYTempAuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042879BD2775B894001069C0 /* FLYTempAuthorizeViewController.m */; };
+		042879C127795363001069C0 /* FLYOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042879C027795362001069C0 /* FLYOptionCell.m */; };
+		042879C427796328001069C0 /* FLYSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042879C327796328001069C0 /* FLYSelectCell.m */; };
+		042879CB277987E9001069C0 /* FLYInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042879CA277987E9001069C0 /* FLYInputCell.m */; };
+		042879CE27798A4F001069C0 /* FLYInputTipsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042879CD27798A4F001069C0 /* FLYInputTipsCell.m */; };
+		042879D52779A6BB001069C0 /* FLYAuthorizeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042879D42779A6BB001069C0 /* FLYAuthorizeDetailViewController.m */; };
+		042879D82779B97A001069C0 /* FLYOpenRecordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042879D72779B97A001069C0 /* FLYOpenRecordListViewController.m */; };
+		043576DD295C155B00C8DFA5 /* FLYDrugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043576DC295C155B00C8DFA5 /* FLYDrugModel.m */; };
+		043576E0295C29C000C8DFA5 /* FLYBoxInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043576DF295C29C000C8DFA5 /* FLYBoxInfoModel.m */; };
+		043576E3295C31E200C8DFA5 /* FLYMedicationRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043576E2295C31E200C8DFA5 /* FLYMedicationRecordModel.m */; };
+		043576E6295D841000C8DFA5 /* FLYDrugRemindModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043576E5295D841000C8DFA5 /* FLYDrugRemindModel.m */; };
+		043E8511279808980018EA28 /* FLYUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E850F279808980018EA28 /* FLYUtility.m */; };
+		043F1A632951BBD400F57F9A /* FLYMedicineBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A622951BBD400F57F9A /* FLYMedicineBoxView.m */; };
+		043F1A6729529ED800F57F9A /* FLYMedicineBoxMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A6629529ED800F57F9A /* FLYMedicineBoxMenuViewController.m */; };
+		043F1A6A2952A09400F57F9A /* FLYBoxMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A692952A09400F57F9A /* FLYBoxMenuModel.m */; };
+		043F1A6D2952A24D00F57F9A /* FLYBoxMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A6C2952A24D00F57F9A /* FLYBoxMenuCell.m */; };
+		043F1A702952A4BA00F57F9A /* FLYBoxSetupTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A6F2952A4BA00F57F9A /* FLYBoxSetupTimeViewController.m */; };
+		043F1A732952A59300F57F9A /* FLYBoxTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A722952A59300F57F9A /* FLYBoxTimeModel.m */; };
+		043F1A762952A83F00F57F9A /* FLYBoxTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A752952A83F00F57F9A /* FLYBoxTimeCell.m */; };
+		043F1A792952AD5700F57F9A /* FLYMedicationRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A782952AD5700F57F9A /* FLYMedicationRecordViewController.m */; };
+		043F1A7C2952B32300F57F9A /* FLYMedicationRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A7B2952B32300F57F9A /* FLYMedicationRecordCell.m */; };
+		043F1A7F2952D46500F57F9A /* FLYDrugListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A7E2952D46500F57F9A /* FLYDrugListViewController.m */; };
+		043F1A822952D7E200F57F9A /* FLYDrugCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A812952D7E200F57F9A /* FLYDrugCell.m */; };
+		043F1A852952E17C00F57F9A /* FLYAddDrugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A842952E17C00F57F9A /* FLYAddDrugViewController.m */; };
+		043F1A882952E54D00F57F9A /* FLYAddDrugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A872952E54D00F57F9A /* FLYAddDrugModel.m */; };
+		043F1A8B2952E83F00F57F9A /* FLYAddDrugCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A8A2952E83F00F57F9A /* FLYAddDrugCell.m */; };
+		043F1A8E2952ECA800F57F9A /* FLYDrugRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A8D2952ECA800F57F9A /* FLYDrugRemindViewController.m */; };
+		043F1A912952F06E00F57F9A /* FLYDrugRemindCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A902952F06E00F57F9A /* FLYDrugRemindCell.m */; };
+		043F1A942952FA5F00F57F9A /* FLYAddDrugRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A932952FA5F00F57F9A /* FLYAddDrugRemindViewController.m */; };
+		043F1A972952FBFB00F57F9A /* FLYWhiteTitleNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A962952FBFB00F57F9A /* FLYWhiteTitleNavView.m */; };
+		043F1A9A2953040300F57F9A /* FLYDrugQueryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A992953040300F57F9A /* FLYDrugQueryView.m */; };
+		043F1A9D295306B600F57F9A /* FLYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A9C295306B600F57F9A /* FLYTextField.m */; };
+		043F1AA029530F7600F57F9A /* FLYRemindSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1A9F29530F7600F57F9A /* FLYRemindSelectView.m */; };
+		043F1AA32953F19D00F57F9A /* FLYTimePointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1AA22953F19D00F57F9A /* FLYTimePointView.m */; };
+		043F1AA62954066C00F57F9A /* FLYQueryListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1AA52954066B00F57F9A /* FLYQueryListView.m */; };
+		0443391E26F31158004ED0EE /* FLYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443391D26F31158004ED0EE /* FLYUserModel.m */; };
+		0443392126F31D69004ED0EE /* FLYElderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443392026F31D69004ED0EE /* FLYElderModel.m */; };
+		0443392426F32804004ED0EE /* FLYSysDicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443392326F32804004ED0EE /* FLYSysDicModel.m */; };
+		0443392726F32FE2004ED0EE /* FLYServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443392626F32FE2004ED0EE /* FLYServiceModel.m */; };
+		0443392B26F333B5004ED0EE /* FLYMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443392A26F333B5004ED0EE /* FLYMapViewController.m */; };
+		0443392E26F338E9004ED0EE /* FLYDeviceStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443392D26F338E9004ED0EE /* FLYDeviceStatusModel.m */; };
+		0443393126F34496004ED0EE /* FLYDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443393026F34496004ED0EE /* FLYDeviceModel.m */; };
+		0443393426F351D5004ED0EE /* FLYWarningModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443393326F351D5004ED0EE /* FLYWarningModel.m */; };
+		0443393726F3526C004ED0EE /* FLYDoorRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443393626F3526C004ED0EE /* FLYDoorRecordModel.m */; };
+		0443393A26F42FE5004ED0EE /* FLYMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443393926F42FE5004ED0EE /* FLYMessageModel.m */; };
+		04558A7E2733A9D600C9F918 /* FLYPhysiologicalHistoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A7D2733A9D600C9F918 /* FLYPhysiologicalHistoryListViewController.m */; };
+		04558A812733AEF400C9F918 /* FLYPhysiologicalHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A802733AEF400C9F918 /* FLYPhysiologicalHistoryCell.m */; };
+		04558A842733B94800C9F918 /* FLYYearMonthHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A832733B94800C9F918 /* FLYYearMonthHeaderView.m */; };
+		04558A872733C8EA00C9F918 /* FLYYearMonthGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A862733C8EA00C9F918 /* FLYYearMonthGroupModel.m */; };
+		04558A8D2733D04A00C9F918 /* FLYDeviceClassificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A8C2733D04A00C9F918 /* FLYDeviceClassificationViewController.m */; };
+		04558A902733D35900C9F918 /* FLYDeviceClassificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A8F2733D35900C9F918 /* FLYDeviceClassificationCell.m */; };
+		04558A932733DB9600C9F918 /* FLYDeviceClassificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A922733DB9600C9F918 /* FLYDeviceClassificationModel.m */; };
+		04558A972734D67300C9F918 /* FLYSendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A962734D67300C9F918 /* FLYSendMessageViewController.m */; };
+		04558A9A2734DBD200C9F918 /* FLYAnnotationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A992734DBD200C9F918 /* FLYAnnotationModel.m */; };
+		04558A9D2734F4E900C9F918 /* FLYMapDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A9C2734F4E900C9F918 /* FLYMapDetailView.m */; };
+		04558AA027350ED400C9F918 /* FLYStepHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558A9F27350ED300C9F918 /* FLYStepHistoryViewController.m */; };
+		04558AA32735126300C9F918 /* FLYTrackHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04558AA22735126300C9F918 /* FLYTrackHistoryCell.m */; };
+		045D511A26F1B96B00041946 /* FLYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 045D511926F1B96B00041946 /* FLYUser.m */; };
+		045D5793277056C2003B240D /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 045D5792277056C2003B240D /* AMap.bundle */; };
+		0468C4B729C9A78600C61492 /* FLYDeviceLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468C4B629C9A78600C61492 /* FLYDeviceLocationModel.m */; };
+		046D193626E6211E00D9FD46 /* FLYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D193526E6211E00D9FD46 /* FLYNavigationController.m */; };
+		046D193926E6213100D9FD46 /* FLYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D193826E6213100D9FD46 /* FLYTabBarController.m */; };
+		046D194926E6253700D9FD46 /* Tabbar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 046D194826E6253700D9FD46 /* Tabbar.plist */; };
+		046D197426E6FE7E00D9FD46 /* NSString+FLYEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D194B26E6FE7D00D9FD46 /* NSString+FLYEncryption.m */; };
+		046D197526E6FE7E00D9FD46 /* NSString+FLYVerification.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D194D26E6FE7D00D9FD46 /* NSString+FLYVerification.m */; };
+		046D197626E6FE7E00D9FD46 /* UIImageView+FLYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D195026E6FE7D00D9FD46 /* UIImageView+FLYExtension.m */; };
+		046D197726E6FE7E00D9FD46 /* UITableView+FLYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D195326E6FE7D00D9FD46 /* UITableView+FLYRefresh.m */; };
+		046D197826E6FE7E00D9FD46 /* NSArray+FLYUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D195726E6FE7D00D9FD46 /* NSArray+FLYUnicode.m */; };
+		046D197926E6FE7E00D9FD46 /* UIImage+FLYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D195A26E6FE7E00D9FD46 /* UIImage+FLYExtension.m */; };
+		046D197A26E6FE7E00D9FD46 /* UIButton+FLYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D195C26E6FE7E00D9FD46 /* UIButton+FLYExtension.m */; };
+		046D197B26E6FE7E00D9FD46 /* NSDate+FLYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D195F26E6FE7E00D9FD46 /* NSDate+FLYExtension.m */; };
+		046D197C26E6FE7E00D9FD46 /* NSDictionary+FLYUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D196326E6FE7E00D9FD46 /* NSDictionary+FLYUnicode.m */; };
+		046D197D26E6FE7E00D9FD46 /* UIAlertController+FLYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D196526E6FE7E00D9FD46 /* UIAlertController+FLYExtension.m */; };
+		046D197E26E6FE7E00D9FD46 /* UIView+FLYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D196B26E6FE7E00D9FD46 /* UIView+FLYFrame.m */; };
+		046D197F26E6FE7E00D9FD46 /* UIView+FLYLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D196C26E6FE7E00D9FD46 /* UIView+FLYLayer.m */; };
+		046D198026E6FE7E00D9FD46 /* UIView+FLYLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D196D26E6FE7E00D9FD46 /* UIView+FLYLayoutConstraint.m */; };
+		046D198126E6FE7E00D9FD46 /* UICollectionView+FLYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D197026E6FE7E00D9FD46 /* UICollectionView+FLYRefresh.m */; };
+		046D198E26E6FEBB00D9FD46 /* FLYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D198526E6FEBA00D9FD46 /* FLYLabel.m */; };
+		046D198F26E6FEBB00D9FD46 /* FLYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D198726E6FEBB00D9FD46 /* FLYTextView.m */; };
+		046D199026E6FEBB00D9FD46 /* FLYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D198B26E6FEBB00D9FD46 /* FLYButton.m */; };
+		046D199126E6FEBB00D9FD46 /* FLYCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D198C26E6FEBB00D9FD46 /* FLYCountdownButton.m */; };
+		046D19A526E6FEFC00D9FD46 /* FLYFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D199326E6FEFB00D9FD46 /* FLYFileManager.m */; };
+		046D19A626E6FEFC00D9FD46 /* FLYAudioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D199726E6FEFC00D9FD46 /* FLYAudioTools.m */; };
+		046D19A726E6FEFC00D9FD46 /* FLYPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D199A26E6FEFC00D9FD46 /* FLYPopupView.m */; };
+		046D19A826E6FEFC00D9FD46 /* FLYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D199B26E6FEFC00D9FD46 /* FLYTools.m */; };
+		046D19A926E6FEFC00D9FD46 /* FLYDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D199E26E6FEFC00D9FD46 /* FLYDeviceManager.m */; };
+		046D19AA26E6FEFC00D9FD46 /* FLYPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19A126E6FEFC00D9FD46 /* FLYPhotoManager.m */; };
+		046D19AB26E6FEFC00D9FD46 /* FLYTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19A326E6FEFC00D9FD46 /* FLYTime.m */; };
+		046D19B026E7061100D9FD46 /* FLYExceptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19AF26E7061000D9FD46 /* FLYExceptionView.m */; };
+		046D19BF26E7162800D9FD46 /* UIBarButtonItem+FLYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19BE26E7162800D9FD46 /* UIBarButtonItem+FLYExtension.m */; };
+		046D19C726E7368E00D9FD46 /* FLYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19C626E7368E00D9FD46 /* FLYViewController.m */; };
+		046D19CA26E7377000D9FD46 /* FLYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19C926E7377000D9FD46 /* FLYBaseViewController.m */; };
+		046D19E026E7393600D9FD46 /* FLYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19DF26E7393600D9FD46 /* FLYHomeViewController.m */; };
+		046D19E326E7395800D9FD46 /* FLYMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19E226E7395800D9FD46 /* FLYMessageViewController.m */; };
+		046D19E626E7396900D9FD46 /* FLYMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19E526E7396900D9FD46 /* FLYMyViewController.m */; };
+		046D19F526E74C4F00D9FD46 /* FLYPersonalHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19F426E74C4F00D9FD46 /* FLYPersonalHomeViewController.m */; };
+		046D19F826E7522A00D9FD46 /* FLYCircularView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19F726E7522A00D9FD46 /* FLYCircularView.m */; };
+		046D19FB26E7556200D9FD46 /* FLYElderlyBaseInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19FA26E7556200D9FD46 /* FLYElderlyBaseInfoView.m */; };
+		046D19FE26E75BB600D9FD46 /* FLYElderlyMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D19FD26E75BB600D9FD46 /* FLYElderlyMenuView.m */; };
+		046D1A0126E76A8000D9FD46 /* FLYElderlyMenuButtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D1A0026E76A8000D9FD46 /* FLYElderlyMenuButtom.m */; };
+		046D1A0426E76CD100D9FD46 /* FLYDeviceStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D1A0326E76CD100D9FD46 /* FLYDeviceStatusView.m */; };
+		046D87BF272FDA5A0069680C /* FLYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D87BC272FDA590069680C /* FLYNetwork.m */; };
+		046D87C0272FDA5A0069680C /* FLYNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D87BE272FDA590069680C /* FLYNetworkTool.m */; };
+		04729B602744A690007D0F48 /* FLYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04729B5F2744A690007D0F48 /* FLYModel.m */; };
+		04729B632744A6B9007D0F48 /* FLYChatRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04729B622744A6B8007D0F48 /* FLYChatRecordModel.m */; };
+		047645AD2744DF9D00EFBCAA /* FLYChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047645AC2744DF9D00EFBCAA /* FLYChatCell.m */; };
+		04796B8F273A3E1A00F51EB7 /* FLYStepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04796B8E273A3E1A00F51EB7 /* FLYStepModel.m */; };
+		04796B98273A85C400F51EB7 /* FLYTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04796B97273A85C400F51EB7 /* FLYTrackViewController.m */; };
+		04796B9B273B64C400F51EB7 /* FLYTrackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04796B9A273B64C400F51EB7 /* FLYTrackModel.m */; };
+		04796B9E273B722600F51EB7 /* FLYTrackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04796B9D273B722600F51EB7 /* FLYTrackView.m */; };
+		047A39CE27326181009F484A /* FLYMotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A39CD27326181009F484A /* FLYMotionView.m */; };
+		047EA3CB273E03BE009C26C7 /* FLYHealthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 047EA3CA273E03BE009C26C7 /* FLYHealthModel.m */; };
+		047EA3CE27420937009C26C7 /* FLYLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047EA3CD27420937009C26C7 /* FLYLineChartView.m */; };
+		04833F262784500400963E5A /* NSString+FLYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04833F252784500400963E5A /* NSString+FLYExtension.m */; };
+		04833F29278453F800963E5A /* FLYOpenRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04833F28278453F800963E5A /* FLYOpenRecordModel.m */; };
+		04833F2C27854AFE00963E5A /* FLYOpenDoorResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04833F2B27854AFE00963E5A /* FLYOpenDoorResultView.m */; };
+		0486586127549A5500BF296F /* FLYDeviceSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486586027549A5500BF296F /* FLYDeviceSegmentBar.m */; };
+		048658642754A48400BF296F /* FLYDeviceRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048658632754A48400BF296F /* FLYDeviceRecordCell.m */; };
+		048658672754B4C100BF296F /* FLYBedRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048658662754B4C100BF296F /* FLYBedRecordModel.m */; };
+		0488CE3E26F1896A000CE201 /* FLYOpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE3D26F1896A000CE201 /* FLYOpinionViewController.m */; };
+		0488CE4226F1A0E9000CE201 /* FLYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE4126F1A0E9000CE201 /* FLYLoginViewController.m */; };
+		0494166227842BFD0037AFE7 /* FLYAuthorizeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494166127842BFC0037AFE7 /* FLYAuthorizeModel.m */; };
+		04AA621E26F587A2006479D2 /* FLYFamilyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA621D26F587A2006479D2 /* FLYFamilyModel.m */; };
+		04AA622126F58AF0006479D2 /* FLYMemberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA622026F58AF0006479D2 /* FLYMemberModel.m */; };
+		04BEC514273291C900C72188 /* FLYPhysiologicalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEC513273291C900C72188 /* FLYPhysiologicalCell.m */; };
+		04BEC51927329BE300C72188 /* FLYPhysiologicalChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEC51827329BE300C72188 /* FLYPhysiologicalChartViewController.m */; };
+		04BEC51C273375C800C72188 /* FLYPhysiologicalCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEC51B273375C800C72188 /* FLYPhysiologicalCircleView.m */; };
+		04BEC51F27337ACB00C72188 /* UIColor+FLYHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEC51E27337ACB00C72188 /* UIColor+FLYHex.m */; };
+		04BEC522273386C300C72188 /* FLYPhysiologicalChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEC521273386C300C72188 /* FLYPhysiologicalChartView.m */; };
+		04C2E83726E85E7E003E7C0C /* FLYHealthRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E83626E85E7E003E7C0C /* FLYHealthRecordViewController.m */; };
+		04C2E84026E898A4003E7C0C /* FLYCustomSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E83F26E898A4003E7C0C /* FLYCustomSegmentBar.m */; };
+		04C2E84326E89B9C003E7C0C /* FLYPhysiologicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E84226E89B9C003E7C0C /* FLYPhysiologicalViewController.m */; };
+		04C2E84726E89C36003E7C0C /* FLYPersonalBaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E84626E89C36003E7C0C /* FLYPersonalBaseInfoViewController.m */; };
+		04C2E84B26E89F7E003E7C0C /* FLYPersonalBaseInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E84A26E89F7E003E7C0C /* FLYPersonalBaseInfoCell.m */; };
+		04C2E85426E8A366003E7C0C /* FLYKeyValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E85326E8A366003E7C0C /* FLYKeyValueModel.m */; };
+		04C2E85B26E8A9CF003E7C0C /* FLYServiceRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E85A26E8A9CF003E7C0C /* FLYServiceRecordViewController.m */; };
+		04C2E85E26E8AAC8003E7C0C /* FLYFilterBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E85D26E8AAC8003E7C0C /* FLYFilterBar.m */; };
+		04C2E86126E8BCBB003E7C0C /* FLYFilterItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E86026E8BCBB003E7C0C /* FLYFilterItemView.m */; };
+		04C2E86426E9B882003E7C0C /* FLYFilterTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E86326E9B882003E7C0C /* FLYFilterTimeView.m */; };
+		04C2E86726E9CCAE003E7C0C /* UIView+FLYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E86626E9CCAE003E7C0C /* UIView+FLYExtension.m */; };
+		04C2E86D26E9E511003E7C0C /* FLYServiceRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E86C26E9E511003E7C0C /* FLYServiceRecordCell.m */; };
+		04C2E87126E9F8C2003E7C0C /* FLYDeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E87026E9F8C2003E7C0C /* FLYDeviceListViewController.m */; };
+		04C2E87426E9FA94003E7C0C /* FLYDeviceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E87326E9FA93003E7C0C /* FLYDeviceListCell.m */; };
+		04C2E87726E9FBD0003E7C0C /* FLYFilterDeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E87626E9FBD0003E7C0C /* FLYFilterDeviceView.m */; };
+		04C2E87A26EA0C98003E7C0C /* FLYFilterDeviceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E87926EA0C98003E7C0C /* FLYFilterDeviceButton.m */; };
+		04C2E87D26EAF355003E7C0C /* FLYDeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E87C26EAF355003E7C0C /* FLYDeviceDetailViewController.m */; };
+		04C2E88026EAF894003E7C0C /* FLYDeviceDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E87F26EAF894003E7C0C /* FLYDeviceDetailCell.m */; };
+		04C2E88626EB08C7003E7C0C /* FLYDeviceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E88526EB08C7003E7C0C /* FLYDeviceHeaderView.m */; };
+		04C2E88A26EB206D003E7C0C /* FLYMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E88926EB206D003E7C0C /* FLYMessageCell.m */; };
+		04C2E88E26EB3735003E7C0C /* FLYMyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E88D26EB3735003E7C0C /* FLYMyCell.m */; };
+		04C2E89126EB3841003E7C0C /* FLYMyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E89026EB3841003E7C0C /* FLYMyModel.m */; };
+		04C2E89426EB4ACC003E7C0C /* FLYMyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E89326EB4ACC003E7C0C /* FLYMyHeaderView.m */; };
+		04C2E89B26EB5503003E7C0C /* FLYFamilyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E89A26EB5503003E7C0C /* FLYFamilyListViewController.m */; };
+		04C2E89E26EB57EC003E7C0C /* FLYFamilyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E89D26EB57EC003E7C0C /* FLYFamilyCell.m */; };
+		04C2E8A126EB64CF003E7C0C /* FLYFamilyMemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E8A026EB64CF003E7C0C /* FLYFamilyMemberListViewController.m */; };
+		04C2E8A426EB65AF003E7C0C /* FLYFamilyMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E8A326EB65AF003E7C0C /* FLYFamilyMemberCell.m */; };
+		04C2E8A726EEF07E003E7C0C /* FLYAddMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E8A626EEF07E003E7C0C /* FLYAddMemberViewController.m */; };
+		04C2E8AA26EF0288003E7C0C /* FLYMemberDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E8A926EF0288003E7C0C /* FLYMemberDetailViewController.m */; };
+		04C80D3526F24B8D00FD1F62 /* FLYUserAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C80D3426F24B8D00FD1F62 /* FLYUserAction.m */; };
+		04C80D3F26F255BA00FD1F62 /* FLYLeftTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C80D3E26F255BA00FD1F62 /* FLYLeftTextField.m */; };
+		04C80D4626F2DA7A00FD1F62 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C80D4226F2DA7900FD1F62 /* UIImageView+SDWebImage.m */; };
+		04E3CA2C275078670019D4AA /* FLYVersionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3CA2B275078660019D4AA /* FLYVersionModel.m */; };
+		04E3CA2F27507C540019D4AA /* FLYVersionUpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3CA2E27507C540019D4AA /* FLYVersionUpdateView.m */; };
+		04E50478277AB209007C603F /* FLYScreenListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E50476277AB208007C603F /* FLYScreenListView.m */; };
+		04E5047C277AD5A7007C603F /* FLYForgetLockPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E5047B277AD5A7007C603F /* FLYForgetLockPasswordViewController.m */; };
+		04E50482277D7CC6007C603F /* FLYMemberLockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E50481277D7CC6007C603F /* FLYMemberLockCell.m */; };
+		04E50485277D878F007C603F /* FLYHouseLockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E50484277D878F007C603F /* FLYHouseLockModel.m */; };
+		04E50488277D8AD8007C603F /* FLYLockAuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E50487277D8AD8007C603F /* FLYLockAuthorizeViewController.m */; };
+		04E5048B277D9250007C603F /* FLYSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E5048A277D9250007C603F /* FLYSwitchCell.m */; };
+		04E504912783E418007C603F /* FLYOpenDoorParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E504902783E418007C603F /* FLYOpenDoorParentViewController.m */; };
+		04E504992783E5B5007C603F /* FLYPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E504942783E5B5007C603F /* FLYPageScrollView.m */; };
+		04E5049A2783E5B5007C603F /* FLYSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E504962783E5B5007C603F /* FLYSegmentBar.m */; };
+		04E5049B2783E5B5007C603F /* FLYSegmentBarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E504982783E5B5007C603F /* FLYSegmentBarConfig.m */; };
+		04E5049E2783F880007C603F /* FLYDoorLockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E5049D2783F880007C603F /* FLYDoorLockModel.m */; };
+		04E504A12783F924007C603F /* FLYOpenLockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E504A02783F924007C603F /* FLYOpenLockModel.m */; };
+		04E74ADF2A930B01000FE706 /* FLYInputFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E74ADE2A930B01000FE706 /* FLYInputFaceViewController.m */; };
+		04E976872AB58CCA0007B2B5 /* FLYAddFingerprintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E976862AB58CCA0007B2B5 /* FLYAddFingerprintViewController.m */; };
+		04E9768A2AB5A22E0007B2B5 /* FLYFingerprintNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E976892AB5A22E0007B2B5 /* FLYFingerprintNameViewController.m */; };
+		04F1CC9F2790186A007C25C0 /* FLYVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1CC9E2790186A007C25C0 /* FLYVideoCell.m */; };
+		04F1CCA2279021BE007C25C0 /* FLYVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1CCA1279021BE007C25C0 /* FLYVideoModel.m */; };
+		04FF4AB1277063B4008D4476 /* TGNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF4AB0277063B3008D4476 /* TGNetworkTool.m */; };
+		04FF4ABB27708610008D4476 /* FLYRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF4AB727708610008D4476 /* FLYRSA.m */; };
+		04FF4ABC27708610008D4476 /* FLYHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF4AB827708610008D4476 /* FLYHash.m */; };
+		04FF4ABD27708610008D4476 /* FLYAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF4AB927708610008D4476 /* FLYAES.m */; };
+		04FF4ABE27708610008D4476 /* FLYBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF4ABA27708610008D4476 /* FLYBase64.m */; };
+		4A418DE5D972D3B8D2942328 /* Pods_ProvideAged.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E7A90FDED64A1BE4CEDB9F /* Pods_ProvideAged.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		041508782771BC3600D58078 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				041508772771BC3600D58078 /* TGIOT.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0407516226E60485005A97FF /* ProvideAged.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProvideAged.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0407516526E60485005A97FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0407516626E60485005A97FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0407517126E6048B005A97FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0407517426E6048B005A97FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0407517626E6048B005A97FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0407517726E6048B005A97FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		040D47002A9097990063DEC5 /* HealthReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthReportViewController.m; sourceTree = "<group>"; };
+		040D47012A9097990063DEC5 /* HealthReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthReportViewController.h; sourceTree = "<group>"; };
+		040D47032A90980B0063DEC5 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
+		040D47042A90980B0063DEC5 /* HealthTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthTitleView.h; sourceTree = "<group>"; };
+		040D47052A90980B0063DEC5 /* HealthTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthTitleView.m; sourceTree = "<group>"; };
+		040D47062A90980B0063DEC5 /* DatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerView.h; sourceTree = "<group>"; };
+		041311A22AAC047D00A4B4A0 /* FLYFingerprintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFingerprintViewController.h; sourceTree = "<group>"; };
+		041311A32AAC047D00A4B4A0 /* FLYFingerprintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFingerprintViewController.m; sourceTree = "<group>"; };
+		041311A52AB042F900A4B4A0 /* FLYFingerprintModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFingerprintModel.h; sourceTree = "<group>"; };
+		041311A62AB042F900A4B4A0 /* FLYFingerprintModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFingerprintModel.m; sourceTree = "<group>"; };
+		041311A82AB049C600A4B4A0 /* FLYFingerprintTipsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFingerprintTipsViewController.h; sourceTree = "<group>"; };
+		041311A92AB049C600A4B4A0 /* FLYFingerprintTipsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFingerprintTipsViewController.m; sourceTree = "<group>"; };
+		0415087A2772C05A00D58078 /* FLYVideoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYVideoListViewController.h; sourceTree = "<group>"; };
+		0415087B2772C05A00D58078 /* FLYVideoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYVideoListViewController.m; sourceTree = "<group>"; };
+		0415087E2772C83300D58078 /* FLYZiGuang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYZiGuang.h; sourceTree = "<group>"; };
+		0415087F2772C83300D58078 /* FLYZiGuang.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYZiGuang.m; sourceTree = "<group>"; };
+		041508812772C84900D58078 /* FLYZiGuangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYZiGuangManager.h; sourceTree = "<group>"; };
+		041508822772C84900D58078 /* FLYZiGuangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYZiGuangManager.m; sourceTree = "<group>"; };
+		041508842772C85F00D58078 /* FLYZiGuangNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYZiGuangNetwork.h; sourceTree = "<group>"; };
+		041508852772C85F00D58078 /* FLYZiGuangNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYZiGuangNetwork.m; sourceTree = "<group>"; };
+		041508872772C8A100D58078 /* FLYZiGuangModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYZiGuangModel.h; sourceTree = "<group>"; };
+		041508882772C8A100D58078 /* FLYZiGuangModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYZiGuangModel.m; sourceTree = "<group>"; };
+		0415088A2772CA1400D58078 /* ICINSmartLockSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ICINSmartLockSDK.framework; sourceTree = "<group>"; };
+		0415089027741D2200D58078 /* FLYOpenDoorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOpenDoorViewController.h; sourceTree = "<group>"; };
+		0415089127741D2200D58078 /* FLYOpenDoorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOpenDoorViewController.m; sourceTree = "<group>"; };
+		041508932774246700D58078 /* FLYOpenDoorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOpenDoorView.h; sourceTree = "<group>"; };
+		041508942774246700D58078 /* FLYOpenDoorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOpenDoorView.m; sourceTree = "<group>"; };
+		04150896277452C000D58078 /* FLYOpenDoorMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOpenDoorMenuView.h; sourceTree = "<group>"; };
+		04150897277452C000D58078 /* FLYOpenDoorMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOpenDoorMenuView.m; sourceTree = "<group>"; };
+		0415089A277470AD00D58078 /* FLYTempAuthorizeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYTempAuthorizeListViewController.h; sourceTree = "<group>"; };
+		0415089B277470AD00D58078 /* FLYTempAuthorizeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYTempAuthorizeListViewController.m; sourceTree = "<group>"; };
+		0415089D277561E100D58078 /* FLYBaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYBaseCollectionViewController.h; sourceTree = "<group>"; };
+		0415089E277561E100D58078 /* FLYBaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYBaseCollectionViewController.m; sourceTree = "<group>"; };
+		041508A427756B2000D58078 /* FLYTempAuthorizeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYTempAuthorizeCell.h; sourceTree = "<group>"; };
+		041508A527756B2000D58078 /* FLYTempAuthorizeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYTempAuthorizeCell.m; sourceTree = "<group>"; };
+		042879B92775B865001069C0 /* FLYBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYBaseTableViewController.h; sourceTree = "<group>"; };
+		042879BA2775B865001069C0 /* FLYBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYBaseTableViewController.m; sourceTree = "<group>"; };
+		042879BC2775B894001069C0 /* FLYTempAuthorizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYTempAuthorizeViewController.h; sourceTree = "<group>"; };
+		042879BD2775B894001069C0 /* FLYTempAuthorizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYTempAuthorizeViewController.m; sourceTree = "<group>"; };
+		042879BF27795362001069C0 /* FLYOptionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOptionCell.h; sourceTree = "<group>"; };
+		042879C027795362001069C0 /* FLYOptionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOptionCell.m; sourceTree = "<group>"; };
+		042879C227796328001069C0 /* FLYSelectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYSelectCell.h; sourceTree = "<group>"; };
+		042879C327796328001069C0 /* FLYSelectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYSelectCell.m; sourceTree = "<group>"; };
+		042879C9277987E8001069C0 /* FLYInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYInputCell.h; sourceTree = "<group>"; };
+		042879CA277987E9001069C0 /* FLYInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYInputCell.m; sourceTree = "<group>"; };
+		042879CC27798A4F001069C0 /* FLYInputTipsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYInputTipsCell.h; sourceTree = "<group>"; };
+		042879CD27798A4F001069C0 /* FLYInputTipsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYInputTipsCell.m; sourceTree = "<group>"; };
+		042879D32779A6BB001069C0 /* FLYAuthorizeDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAuthorizeDetailViewController.h; sourceTree = "<group>"; };
+		042879D42779A6BB001069C0 /* FLYAuthorizeDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAuthorizeDetailViewController.m; sourceTree = "<group>"; };
+		042879D62779B97A001069C0 /* FLYOpenRecordListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOpenRecordListViewController.h; sourceTree = "<group>"; };
+		042879D72779B97A001069C0 /* FLYOpenRecordListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOpenRecordListViewController.m; sourceTree = "<group>"; };
+		043576DB295C155B00C8DFA5 /* FLYDrugModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDrugModel.h; sourceTree = "<group>"; };
+		043576DC295C155B00C8DFA5 /* FLYDrugModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDrugModel.m; sourceTree = "<group>"; };
+		043576DE295C29C000C8DFA5 /* FLYBoxInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYBoxInfoModel.h; sourceTree = "<group>"; };
+		043576DF295C29C000C8DFA5 /* FLYBoxInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYBoxInfoModel.m; sourceTree = "<group>"; };
+		043576E1295C31E200C8DFA5 /* FLYMedicationRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMedicationRecordModel.h; sourceTree = "<group>"; };
+		043576E2295C31E200C8DFA5 /* FLYMedicationRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMedicationRecordModel.m; sourceTree = "<group>"; };
+		043576E4295D841000C8DFA5 /* FLYDrugRemindModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDrugRemindModel.h; sourceTree = "<group>"; };
+		043576E5295D841000C8DFA5 /* FLYDrugRemindModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDrugRemindModel.m; sourceTree = "<group>"; };
+		043E850F279808980018EA28 /* FLYUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYUtility.m; sourceTree = "<group>"; };
+		043E8510279808980018EA28 /* FLYUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYUtility.h; sourceTree = "<group>"; };
+		043F1A612951BBD400F57F9A /* FLYMedicineBoxView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMedicineBoxView.h; sourceTree = "<group>"; };
+		043F1A622951BBD400F57F9A /* FLYMedicineBoxView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMedicineBoxView.m; sourceTree = "<group>"; };
+		043F1A6529529ED800F57F9A /* FLYMedicineBoxMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMedicineBoxMenuViewController.h; sourceTree = "<group>"; };
+		043F1A6629529ED800F57F9A /* FLYMedicineBoxMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMedicineBoxMenuViewController.m; sourceTree = "<group>"; };
+		043F1A682952A09400F57F9A /* FLYBoxMenuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYBoxMenuModel.h; sourceTree = "<group>"; };
+		043F1A692952A09400F57F9A /* FLYBoxMenuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYBoxMenuModel.m; sourceTree = "<group>"; };
+		043F1A6B2952A24D00F57F9A /* FLYBoxMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYBoxMenuCell.h; sourceTree = "<group>"; };
+		043F1A6C2952A24D00F57F9A /* FLYBoxMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYBoxMenuCell.m; sourceTree = "<group>"; };
+		043F1A6E2952A4BA00F57F9A /* FLYBoxSetupTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYBoxSetupTimeViewController.h; sourceTree = "<group>"; };
+		043F1A6F2952A4BA00F57F9A /* FLYBoxSetupTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYBoxSetupTimeViewController.m; sourceTree = "<group>"; };
+		043F1A712952A59300F57F9A /* FLYBoxTimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYBoxTimeModel.h; sourceTree = "<group>"; };
+		043F1A722952A59300F57F9A /* FLYBoxTimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYBoxTimeModel.m; sourceTree = "<group>"; };
+		043F1A742952A83F00F57F9A /* FLYBoxTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYBoxTimeCell.h; sourceTree = "<group>"; };
+		043F1A752952A83F00F57F9A /* FLYBoxTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYBoxTimeCell.m; sourceTree = "<group>"; };
+		043F1A772952AD5700F57F9A /* FLYMedicationRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMedicationRecordViewController.h; sourceTree = "<group>"; };
+		043F1A782952AD5700F57F9A /* FLYMedicationRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMedicationRecordViewController.m; sourceTree = "<group>"; };
+		043F1A7A2952B32300F57F9A /* FLYMedicationRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMedicationRecordCell.h; sourceTree = "<group>"; };
+		043F1A7B2952B32300F57F9A /* FLYMedicationRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMedicationRecordCell.m; sourceTree = "<group>"; };
+		043F1A7D2952D46500F57F9A /* FLYDrugListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDrugListViewController.h; sourceTree = "<group>"; };
+		043F1A7E2952D46500F57F9A /* FLYDrugListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDrugListViewController.m; sourceTree = "<group>"; };
+		043F1A802952D7E200F57F9A /* FLYDrugCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDrugCell.h; sourceTree = "<group>"; };
+		043F1A812952D7E200F57F9A /* FLYDrugCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDrugCell.m; sourceTree = "<group>"; };
+		043F1A832952E17C00F57F9A /* FLYAddDrugViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAddDrugViewController.h; sourceTree = "<group>"; };
+		043F1A842952E17C00F57F9A /* FLYAddDrugViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAddDrugViewController.m; sourceTree = "<group>"; };
+		043F1A862952E54D00F57F9A /* FLYAddDrugModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAddDrugModel.h; sourceTree = "<group>"; };
+		043F1A872952E54D00F57F9A /* FLYAddDrugModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAddDrugModel.m; sourceTree = "<group>"; };
+		043F1A892952E83F00F57F9A /* FLYAddDrugCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAddDrugCell.h; sourceTree = "<group>"; };
+		043F1A8A2952E83F00F57F9A /* FLYAddDrugCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAddDrugCell.m; sourceTree = "<group>"; };
+		043F1A8C2952ECA800F57F9A /* FLYDrugRemindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDrugRemindViewController.h; sourceTree = "<group>"; };
+		043F1A8D2952ECA800F57F9A /* FLYDrugRemindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDrugRemindViewController.m; sourceTree = "<group>"; };
+		043F1A8F2952F06E00F57F9A /* FLYDrugRemindCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDrugRemindCell.h; sourceTree = "<group>"; };
+		043F1A902952F06E00F57F9A /* FLYDrugRemindCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDrugRemindCell.m; sourceTree = "<group>"; };
+		043F1A922952FA5F00F57F9A /* FLYAddDrugRemindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAddDrugRemindViewController.h; sourceTree = "<group>"; };
+		043F1A932952FA5F00F57F9A /* FLYAddDrugRemindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAddDrugRemindViewController.m; sourceTree = "<group>"; };
+		043F1A952952FBFB00F57F9A /* FLYWhiteTitleNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYWhiteTitleNavView.h; sourceTree = "<group>"; };
+		043F1A962952FBFB00F57F9A /* FLYWhiteTitleNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYWhiteTitleNavView.m; sourceTree = "<group>"; };
+		043F1A982953040300F57F9A /* FLYDrugQueryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDrugQueryView.h; sourceTree = "<group>"; };
+		043F1A992953040300F57F9A /* FLYDrugQueryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDrugQueryView.m; sourceTree = "<group>"; };
+		043F1A9B295306B600F57F9A /* FLYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYTextField.h; sourceTree = "<group>"; };
+		043F1A9C295306B600F57F9A /* FLYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYTextField.m; sourceTree = "<group>"; };
+		043F1A9E29530F7600F57F9A /* FLYRemindSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYRemindSelectView.h; sourceTree = "<group>"; };
+		043F1A9F29530F7600F57F9A /* FLYRemindSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYRemindSelectView.m; sourceTree = "<group>"; };
+		043F1AA12953F19D00F57F9A /* FLYTimePointView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYTimePointView.h; sourceTree = "<group>"; };
+		043F1AA22953F19D00F57F9A /* FLYTimePointView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYTimePointView.m; sourceTree = "<group>"; };
+		043F1AA42954066B00F57F9A /* FLYQueryListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYQueryListView.h; sourceTree = "<group>"; };
+		043F1AA52954066B00F57F9A /* FLYQueryListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYQueryListView.m; sourceTree = "<group>"; };
+		0443391C26F31158004ED0EE /* FLYUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYUserModel.h; sourceTree = "<group>"; };
+		0443391D26F31158004ED0EE /* FLYUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYUserModel.m; sourceTree = "<group>"; };
+		0443391F26F31D69004ED0EE /* FLYElderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYElderModel.h; sourceTree = "<group>"; };
+		0443392026F31D69004ED0EE /* FLYElderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYElderModel.m; sourceTree = "<group>"; };
+		0443392226F32804004ED0EE /* FLYSysDicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYSysDicModel.h; sourceTree = "<group>"; };
+		0443392326F32804004ED0EE /* FLYSysDicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYSysDicModel.m; sourceTree = "<group>"; };
+		0443392526F32FE2004ED0EE /* FLYServiceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYServiceModel.h; sourceTree = "<group>"; };
+		0443392626F32FE2004ED0EE /* FLYServiceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYServiceModel.m; sourceTree = "<group>"; };
+		0443392926F333B5004ED0EE /* FLYMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMapViewController.h; sourceTree = "<group>"; };
+		0443392A26F333B5004ED0EE /* FLYMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMapViewController.m; sourceTree = "<group>"; };
+		0443392C26F338E9004ED0EE /* FLYDeviceStatusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceStatusModel.h; sourceTree = "<group>"; };
+		0443392D26F338E9004ED0EE /* FLYDeviceStatusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceStatusModel.m; sourceTree = "<group>"; };
+		0443392F26F34495004ED0EE /* FLYDeviceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceModel.h; sourceTree = "<group>"; };
+		0443393026F34496004ED0EE /* FLYDeviceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceModel.m; sourceTree = "<group>"; };
+		0443393226F351D5004ED0EE /* FLYWarningModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYWarningModel.h; sourceTree = "<group>"; };
+		0443393326F351D5004ED0EE /* FLYWarningModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYWarningModel.m; sourceTree = "<group>"; };
+		0443393526F3526C004ED0EE /* FLYDoorRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDoorRecordModel.h; sourceTree = "<group>"; };
+		0443393626F3526C004ED0EE /* FLYDoorRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDoorRecordModel.m; sourceTree = "<group>"; };
+		0443393826F42FE5004ED0EE /* FLYMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMessageModel.h; sourceTree = "<group>"; };
+		0443393926F42FE5004ED0EE /* FLYMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMessageModel.m; sourceTree = "<group>"; };
+		04558A7C2733A9D600C9F918 /* FLYPhysiologicalHistoryListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPhysiologicalHistoryListViewController.h; sourceTree = "<group>"; };
+		04558A7D2733A9D600C9F918 /* FLYPhysiologicalHistoryListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPhysiologicalHistoryListViewController.m; sourceTree = "<group>"; };
+		04558A7F2733AEF400C9F918 /* FLYPhysiologicalHistoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPhysiologicalHistoryCell.h; sourceTree = "<group>"; };
+		04558A802733AEF400C9F918 /* FLYPhysiologicalHistoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPhysiologicalHistoryCell.m; sourceTree = "<group>"; };
+		04558A822733B94800C9F918 /* FLYYearMonthHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYYearMonthHeaderView.h; sourceTree = "<group>"; };
+		04558A832733B94800C9F918 /* FLYYearMonthHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYYearMonthHeaderView.m; sourceTree = "<group>"; };
+		04558A852733C8EA00C9F918 /* FLYYearMonthGroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYYearMonthGroupModel.h; sourceTree = "<group>"; };
+		04558A862733C8EA00C9F918 /* FLYYearMonthGroupModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYYearMonthGroupModel.m; sourceTree = "<group>"; };
+		04558A8B2733D04A00C9F918 /* FLYDeviceClassificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceClassificationViewController.h; sourceTree = "<group>"; };
+		04558A8C2733D04A00C9F918 /* FLYDeviceClassificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceClassificationViewController.m; sourceTree = "<group>"; };
+		04558A8E2733D35900C9F918 /* FLYDeviceClassificationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceClassificationCell.h; sourceTree = "<group>"; };
+		04558A8F2733D35900C9F918 /* FLYDeviceClassificationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceClassificationCell.m; sourceTree = "<group>"; };
+		04558A912733DB9600C9F918 /* FLYDeviceClassificationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceClassificationModel.h; sourceTree = "<group>"; };
+		04558A922733DB9600C9F918 /* FLYDeviceClassificationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceClassificationModel.m; sourceTree = "<group>"; };
+		04558A952734D67300C9F918 /* FLYSendMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYSendMessageViewController.h; sourceTree = "<group>"; };
+		04558A962734D67300C9F918 /* FLYSendMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYSendMessageViewController.m; sourceTree = "<group>"; };
+		04558A982734DBD200C9F918 /* FLYAnnotationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAnnotationModel.h; sourceTree = "<group>"; };
+		04558A992734DBD200C9F918 /* FLYAnnotationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAnnotationModel.m; sourceTree = "<group>"; };
+		04558A9B2734F4E900C9F918 /* FLYMapDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMapDetailView.h; sourceTree = "<group>"; };
+		04558A9C2734F4E900C9F918 /* FLYMapDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMapDetailView.m; sourceTree = "<group>"; };
+		04558A9E27350ED300C9F918 /* FLYStepHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYStepHistoryViewController.h; sourceTree = "<group>"; };
+		04558A9F27350ED300C9F918 /* FLYStepHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYStepHistoryViewController.m; sourceTree = "<group>"; };
+		04558AA12735126300C9F918 /* FLYTrackHistoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYTrackHistoryCell.h; sourceTree = "<group>"; };
+		04558AA22735126300C9F918 /* FLYTrackHistoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYTrackHistoryCell.m; sourceTree = "<group>"; };
+		045D511826F1B96B00041946 /* FLYUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYUser.h; sourceTree = "<group>"; };
+		045D511926F1B96B00041946 /* FLYUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYUser.m; sourceTree = "<group>"; };
+		045D5792277056C2003B240D /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		0468C4B529C9A78600C61492 /* FLYDeviceLocationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceLocationModel.h; sourceTree = "<group>"; };
+		0468C4B629C9A78600C61492 /* FLYDeviceLocationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceLocationModel.m; sourceTree = "<group>"; };
+		046D193426E6211E00D9FD46 /* FLYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYNavigationController.h; sourceTree = "<group>"; };
+		046D193526E6211E00D9FD46 /* FLYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYNavigationController.m; sourceTree = "<group>"; };
+		046D193726E6213100D9FD46 /* FLYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYTabBarController.h; sourceTree = "<group>"; };
+		046D193826E6213100D9FD46 /* FLYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYTabBarController.m; sourceTree = "<group>"; };
+		046D194826E6253700D9FD46 /* Tabbar.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tabbar.plist; sourceTree = "<group>"; };
+		046D194B26E6FE7D00D9FD46 /* NSString+FLYEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FLYEncryption.m"; sourceTree = "<group>"; };
+		046D194C26E6FE7D00D9FD46 /* NSString+FLYVerification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FLYVerification.h"; sourceTree = "<group>"; };
+		046D194D26E6FE7D00D9FD46 /* NSString+FLYVerification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FLYVerification.m"; sourceTree = "<group>"; };
+		046D194E26E6FE7D00D9FD46 /* NSString+FLYEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FLYEncryption.h"; sourceTree = "<group>"; };
+		046D195026E6FE7D00D9FD46 /* UIImageView+FLYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FLYExtension.m"; sourceTree = "<group>"; };
+		046D195126E6FE7D00D9FD46 /* UIImageView+FLYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FLYExtension.h"; sourceTree = "<group>"; };
+		046D195326E6FE7D00D9FD46 /* UITableView+FLYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FLYRefresh.m"; sourceTree = "<group>"; };
+		046D195426E6FE7D00D9FD46 /* UITableView+FLYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FLYRefresh.h"; sourceTree = "<group>"; };
+		046D195626E6FE7D00D9FD46 /* NSArray+FLYUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FLYUnicode.h"; sourceTree = "<group>"; };
+		046D195726E6FE7D00D9FD46 /* NSArray+FLYUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FLYUnicode.m"; sourceTree = "<group>"; };
+		046D195926E6FE7E00D9FD46 /* UIImage+FLYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FLYExtension.h"; sourceTree = "<group>"; };
+		046D195A26E6FE7E00D9FD46 /* UIImage+FLYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FLYExtension.m"; sourceTree = "<group>"; };
+		046D195C26E6FE7E00D9FD46 /* UIButton+FLYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FLYExtension.m"; sourceTree = "<group>"; };
+		046D195D26E6FE7E00D9FD46 /* UIButton+FLYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FLYExtension.h"; sourceTree = "<group>"; };
+		046D195F26E6FE7E00D9FD46 /* NSDate+FLYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FLYExtension.m"; sourceTree = "<group>"; };
+		046D196026E6FE7E00D9FD46 /* NSDate+FLYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FLYExtension.h"; sourceTree = "<group>"; };
+		046D196226E6FE7E00D9FD46 /* NSDictionary+FLYUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FLYUnicode.h"; sourceTree = "<group>"; };
+		046D196326E6FE7E00D9FD46 /* NSDictionary+FLYUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FLYUnicode.m"; sourceTree = "<group>"; };
+		046D196526E6FE7E00D9FD46 /* UIAlertController+FLYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+FLYExtension.m"; sourceTree = "<group>"; };
+		046D196626E6FE7E00D9FD46 /* UIAlertController+FLYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+FLYExtension.h"; sourceTree = "<group>"; };
+		046D196826E6FE7E00D9FD46 /* UIView+FLYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLYFrame.h"; sourceTree = "<group>"; };
+		046D196926E6FE7E00D9FD46 /* UIView+FLYLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLYLayer.h"; sourceTree = "<group>"; };
+		046D196A26E6FE7E00D9FD46 /* UIView+FLYLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLYLayoutConstraint.h"; sourceTree = "<group>"; };
+		046D196B26E6FE7E00D9FD46 /* UIView+FLYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLYFrame.m"; sourceTree = "<group>"; };
+		046D196C26E6FE7E00D9FD46 /* UIView+FLYLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLYLayer.m"; sourceTree = "<group>"; };
+		046D196D26E6FE7E00D9FD46 /* UIView+FLYLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLYLayoutConstraint.m"; sourceTree = "<group>"; };
+		046D196F26E6FE7E00D9FD46 /* UICollectionView+FLYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+FLYRefresh.h"; sourceTree = "<group>"; };
+		046D197026E6FE7E00D9FD46 /* UICollectionView+FLYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+FLYRefresh.m"; sourceTree = "<group>"; };
+		046D198426E6FEBA00D9FD46 /* FLYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYLabel.h; sourceTree = "<group>"; };
+		046D198526E6FEBA00D9FD46 /* FLYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYLabel.m; sourceTree = "<group>"; };
+		046D198726E6FEBB00D9FD46 /* FLYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYTextView.m; sourceTree = "<group>"; };
+		046D198826E6FEBB00D9FD46 /* FLYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYTextView.h; sourceTree = "<group>"; };
+		046D198A26E6FEBB00D9FD46 /* FLYCountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYCountdownButton.h; sourceTree = "<group>"; };
+		046D198B26E6FEBB00D9FD46 /* FLYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYButton.m; sourceTree = "<group>"; };
+		046D198C26E6FEBB00D9FD46 /* FLYCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYCountdownButton.m; sourceTree = "<group>"; };
+		046D198D26E6FEBB00D9FD46 /* FLYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYButton.h; sourceTree = "<group>"; };
+		046D199326E6FEFB00D9FD46 /* FLYFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYFileManager.m; sourceTree = "<group>"; };
+		046D199426E6FEFB00D9FD46 /* FLYFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYFileManager.h; sourceTree = "<group>"; };
+		046D199626E6FEFC00D9FD46 /* FLYAudioTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYAudioTools.h; sourceTree = "<group>"; };
+		046D199726E6FEFC00D9FD46 /* FLYAudioTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYAudioTools.m; sourceTree = "<group>"; };
+		046D199926E6FEFC00D9FD46 /* FLYPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYPopupView.h; sourceTree = "<group>"; };
+		046D199A26E6FEFC00D9FD46 /* FLYPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPopupView.m; sourceTree = "<group>"; };
+		046D199B26E6FEFC00D9FD46 /* FLYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYTools.m; sourceTree = "<group>"; };
+		046D199C26E6FEFC00D9FD46 /* FLYDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYDeviceManager.h; sourceTree = "<group>"; };
+		046D199D26E6FEFC00D9FD46 /* FLYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYTools.h; sourceTree = "<group>"; };
+		046D199E26E6FEFC00D9FD46 /* FLYDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceManager.m; sourceTree = "<group>"; };
+		046D19A026E6FEFC00D9FD46 /* FLYPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYPhotoManager.h; sourceTree = "<group>"; };
+		046D19A126E6FEFC00D9FD46 /* FLYPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPhotoManager.m; sourceTree = "<group>"; };
+		046D19A326E6FEFC00D9FD46 /* FLYTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYTime.m; sourceTree = "<group>"; };
+		046D19A426E6FEFC00D9FD46 /* FLYTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYTime.h; sourceTree = "<group>"; };
+		046D19AC26E6FF6E00D9FD46 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		046D19AD26E6FF6E00D9FD46 /* FLYMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYMacros.h; sourceTree = "<group>"; };
+		046D19AE26E7061000D9FD46 /* FLYExceptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYExceptionView.h; sourceTree = "<group>"; };
+		046D19AF26E7061000D9FD46 /* FLYExceptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYExceptionView.m; sourceTree = "<group>"; };
+		046D19BD26E7162800D9FD46 /* UIBarButtonItem+FLYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FLYExtension.h"; sourceTree = "<group>"; };
+		046D19BE26E7162800D9FD46 /* UIBarButtonItem+FLYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FLYExtension.m"; sourceTree = "<group>"; };
+		046D19C526E7368E00D9FD46 /* FLYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYViewController.h; sourceTree = "<group>"; };
+		046D19C626E7368E00D9FD46 /* FLYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYViewController.m; sourceTree = "<group>"; };
+		046D19C826E7377000D9FD46 /* FLYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYBaseViewController.h; sourceTree = "<group>"; };
+		046D19C926E7377000D9FD46 /* FLYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYBaseViewController.m; sourceTree = "<group>"; };
+		046D19DE26E7393600D9FD46 /* FLYHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYHomeViewController.h; sourceTree = "<group>"; };
+		046D19DF26E7393600D9FD46 /* FLYHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYHomeViewController.m; sourceTree = "<group>"; };
+		046D19E126E7395800D9FD46 /* FLYMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMessageViewController.h; sourceTree = "<group>"; };
+		046D19E226E7395800D9FD46 /* FLYMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMessageViewController.m; sourceTree = "<group>"; };
+		046D19E426E7396900D9FD46 /* FLYMyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMyViewController.h; sourceTree = "<group>"; };
+		046D19E526E7396900D9FD46 /* FLYMyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMyViewController.m; sourceTree = "<group>"; };
+		046D19F326E74C4F00D9FD46 /* FLYPersonalHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPersonalHomeViewController.h; sourceTree = "<group>"; };
+		046D19F426E74C4F00D9FD46 /* FLYPersonalHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPersonalHomeViewController.m; sourceTree = "<group>"; };
+		046D19F626E7522A00D9FD46 /* FLYCircularView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYCircularView.h; sourceTree = "<group>"; };
+		046D19F726E7522A00D9FD46 /* FLYCircularView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYCircularView.m; sourceTree = "<group>"; };
+		046D19F926E7556200D9FD46 /* FLYElderlyBaseInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYElderlyBaseInfoView.h; sourceTree = "<group>"; };
+		046D19FA26E7556200D9FD46 /* FLYElderlyBaseInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYElderlyBaseInfoView.m; sourceTree = "<group>"; };
+		046D19FC26E75BB600D9FD46 /* FLYElderlyMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYElderlyMenuView.h; sourceTree = "<group>"; };
+		046D19FD26E75BB600D9FD46 /* FLYElderlyMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYElderlyMenuView.m; sourceTree = "<group>"; };
+		046D19FF26E76A8000D9FD46 /* FLYElderlyMenuButtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYElderlyMenuButtom.h; sourceTree = "<group>"; };
+		046D1A0026E76A8000D9FD46 /* FLYElderlyMenuButtom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYElderlyMenuButtom.m; sourceTree = "<group>"; };
+		046D1A0226E76CD100D9FD46 /* FLYDeviceStatusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceStatusView.h; sourceTree = "<group>"; };
+		046D1A0326E76CD100D9FD46 /* FLYDeviceStatusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceStatusView.m; sourceTree = "<group>"; };
+		046D87BB272FDA590069680C /* FLYNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYNetwork.h; sourceTree = "<group>"; };
+		046D87BC272FDA590069680C /* FLYNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYNetwork.m; sourceTree = "<group>"; };
+		046D87BD272FDA590069680C /* FLYNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYNetworkTool.h; sourceTree = "<group>"; };
+		046D87BE272FDA590069680C /* FLYNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYNetworkTool.m; sourceTree = "<group>"; };
+		04729B5E2744A690007D0F48 /* FLYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYModel.h; sourceTree = "<group>"; };
+		04729B5F2744A690007D0F48 /* FLYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYModel.m; sourceTree = "<group>"; };
+		04729B612744A6B8007D0F48 /* FLYChatRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYChatRecordModel.h; sourceTree = "<group>"; };
+		04729B622744A6B8007D0F48 /* FLYChatRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYChatRecordModel.m; sourceTree = "<group>"; };
+		047645AB2744DF9D00EFBCAA /* FLYChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYChatCell.h; sourceTree = "<group>"; };
+		047645AC2744DF9D00EFBCAA /* FLYChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYChatCell.m; sourceTree = "<group>"; };
+		0476C3782771706F008FAE38 /* TGIOT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TGIOT.framework; sourceTree = "<group>"; };
+		04796B8D273A3E1A00F51EB7 /* FLYStepModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYStepModel.h; sourceTree = "<group>"; };
+		04796B8E273A3E1A00F51EB7 /* FLYStepModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYStepModel.m; sourceTree = "<group>"; };
+		04796B96273A85C400F51EB7 /* FLYTrackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYTrackViewController.h; sourceTree = "<group>"; };
+		04796B97273A85C400F51EB7 /* FLYTrackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYTrackViewController.m; sourceTree = "<group>"; };
+		04796B99273B64C400F51EB7 /* FLYTrackModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYTrackModel.h; sourceTree = "<group>"; };
+		04796B9A273B64C400F51EB7 /* FLYTrackModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYTrackModel.m; sourceTree = "<group>"; };
+		04796B9C273B722600F51EB7 /* FLYTrackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYTrackView.h; sourceTree = "<group>"; };
+		04796B9D273B722600F51EB7 /* FLYTrackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYTrackView.m; sourceTree = "<group>"; };
+		047A39CC27326181009F484A /* FLYMotionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMotionView.h; sourceTree = "<group>"; };
+		047A39CD27326181009F484A /* FLYMotionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMotionView.m; sourceTree = "<group>"; };
+		047EA3C9273E03BE009C26C7 /* FLYHealthModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYHealthModel.h; sourceTree = "<group>"; };
+		047EA3CA273E03BE009C26C7 /* FLYHealthModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYHealthModel.m; sourceTree = "<group>"; };
+		047EA3CC27420937009C26C7 /* FLYLineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYLineChartView.h; sourceTree = "<group>"; };
+		047EA3CD27420937009C26C7 /* FLYLineChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYLineChartView.m; sourceTree = "<group>"; };
+		047EA3CF27420E95009C26C7 /* ProvideAged-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProvideAged-Bridging-Header.h"; sourceTree = "<group>"; };
+		047FDF9426F5C5100005DBAB /* ProvideAged.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProvideAged.entitlements; sourceTree = "<group>"; };
+		04833F242784500400963E5A /* NSString+FLYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FLYExtension.h"; sourceTree = "<group>"; };
+		04833F252784500400963E5A /* NSString+FLYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FLYExtension.m"; sourceTree = "<group>"; };
+		04833F27278453F800963E5A /* FLYOpenRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOpenRecordModel.h; sourceTree = "<group>"; };
+		04833F28278453F800963E5A /* FLYOpenRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOpenRecordModel.m; sourceTree = "<group>"; };
+		04833F2A27854AFE00963E5A /* FLYOpenDoorResultView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOpenDoorResultView.h; sourceTree = "<group>"; };
+		04833F2B27854AFE00963E5A /* FLYOpenDoorResultView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOpenDoorResultView.m; sourceTree = "<group>"; };
+		0486585F27549A5500BF296F /* FLYDeviceSegmentBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceSegmentBar.h; sourceTree = "<group>"; };
+		0486586027549A5500BF296F /* FLYDeviceSegmentBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceSegmentBar.m; sourceTree = "<group>"; };
+		048658622754A48400BF296F /* FLYDeviceRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceRecordCell.h; sourceTree = "<group>"; };
+		048658632754A48400BF296F /* FLYDeviceRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceRecordCell.m; sourceTree = "<group>"; };
+		048658652754B4C100BF296F /* FLYBedRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYBedRecordModel.h; sourceTree = "<group>"; };
+		048658662754B4C100BF296F /* FLYBedRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYBedRecordModel.m; sourceTree = "<group>"; };
+		0488CE3C26F1896A000CE201 /* FLYOpinionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOpinionViewController.h; sourceTree = "<group>"; };
+		0488CE3D26F1896A000CE201 /* FLYOpinionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOpinionViewController.m; sourceTree = "<group>"; };
+		0488CE4026F1A0E9000CE201 /* FLYLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYLoginViewController.h; sourceTree = "<group>"; };
+		0488CE4126F1A0E9000CE201 /* FLYLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYLoginViewController.m; sourceTree = "<group>"; };
+		0494166027842BFC0037AFE7 /* FLYAuthorizeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAuthorizeModel.h; sourceTree = "<group>"; };
+		0494166127842BFC0037AFE7 /* FLYAuthorizeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAuthorizeModel.m; sourceTree = "<group>"; };
+		04AA621C26F587A2006479D2 /* FLYFamilyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFamilyModel.h; sourceTree = "<group>"; };
+		04AA621D26F587A2006479D2 /* FLYFamilyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFamilyModel.m; sourceTree = "<group>"; };
+		04AA621F26F58AF0006479D2 /* FLYMemberModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMemberModel.h; sourceTree = "<group>"; };
+		04AA622026F58AF0006479D2 /* FLYMemberModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMemberModel.m; sourceTree = "<group>"; };
+		04BEC512273291C900C72188 /* FLYPhysiologicalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPhysiologicalCell.h; sourceTree = "<group>"; };
+		04BEC513273291C900C72188 /* FLYPhysiologicalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPhysiologicalCell.m; sourceTree = "<group>"; };
+		04BEC51727329BE300C72188 /* FLYPhysiologicalChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPhysiologicalChartViewController.h; sourceTree = "<group>"; };
+		04BEC51827329BE300C72188 /* FLYPhysiologicalChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPhysiologicalChartViewController.m; sourceTree = "<group>"; };
+		04BEC51A273375C800C72188 /* FLYPhysiologicalCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPhysiologicalCircleView.h; sourceTree = "<group>"; };
+		04BEC51B273375C800C72188 /* FLYPhysiologicalCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPhysiologicalCircleView.m; sourceTree = "<group>"; };
+		04BEC51D27337ACB00C72188 /* UIColor+FLYHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FLYHex.h"; sourceTree = "<group>"; };
+		04BEC51E27337ACB00C72188 /* UIColor+FLYHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FLYHex.m"; sourceTree = "<group>"; };
+		04BEC520273386C300C72188 /* FLYPhysiologicalChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPhysiologicalChartView.h; sourceTree = "<group>"; };
+		04BEC521273386C300C72188 /* FLYPhysiologicalChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPhysiologicalChartView.m; sourceTree = "<group>"; };
+		04C2E83526E85E7E003E7C0C /* FLYHealthRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYHealthRecordViewController.h; sourceTree = "<group>"; };
+		04C2E83626E85E7E003E7C0C /* FLYHealthRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYHealthRecordViewController.m; sourceTree = "<group>"; };
+		04C2E83E26E898A4003E7C0C /* FLYCustomSegmentBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYCustomSegmentBar.h; sourceTree = "<group>"; };
+		04C2E83F26E898A4003E7C0C /* FLYCustomSegmentBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYCustomSegmentBar.m; sourceTree = "<group>"; };
+		04C2E84126E89B9C003E7C0C /* FLYPhysiologicalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPhysiologicalViewController.h; sourceTree = "<group>"; };
+		04C2E84226E89B9C003E7C0C /* FLYPhysiologicalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPhysiologicalViewController.m; sourceTree = "<group>"; };
+		04C2E84526E89C36003E7C0C /* FLYPersonalBaseInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPersonalBaseInfoViewController.h; sourceTree = "<group>"; };
+		04C2E84626E89C36003E7C0C /* FLYPersonalBaseInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPersonalBaseInfoViewController.m; sourceTree = "<group>"; };
+		04C2E84926E89F7E003E7C0C /* FLYPersonalBaseInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYPersonalBaseInfoCell.h; sourceTree = "<group>"; };
+		04C2E84A26E89F7E003E7C0C /* FLYPersonalBaseInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYPersonalBaseInfoCell.m; sourceTree = "<group>"; };
+		04C2E85226E8A366003E7C0C /* FLYKeyValueModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYKeyValueModel.h; sourceTree = "<group>"; };
+		04C2E85326E8A366003E7C0C /* FLYKeyValueModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYKeyValueModel.m; sourceTree = "<group>"; };
+		04C2E85926E8A9CF003E7C0C /* FLYServiceRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYServiceRecordViewController.h; sourceTree = "<group>"; };
+		04C2E85A26E8A9CF003E7C0C /* FLYServiceRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYServiceRecordViewController.m; sourceTree = "<group>"; };
+		04C2E85C26E8AAC8003E7C0C /* FLYFilterBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFilterBar.h; sourceTree = "<group>"; };
+		04C2E85D26E8AAC8003E7C0C /* FLYFilterBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFilterBar.m; sourceTree = "<group>"; };
+		04C2E85F26E8BCBB003E7C0C /* FLYFilterItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFilterItemView.h; sourceTree = "<group>"; };
+		04C2E86026E8BCBB003E7C0C /* FLYFilterItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFilterItemView.m; sourceTree = "<group>"; };
+		04C2E86226E9B882003E7C0C /* FLYFilterTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFilterTimeView.h; sourceTree = "<group>"; };
+		04C2E86326E9B882003E7C0C /* FLYFilterTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFilterTimeView.m; sourceTree = "<group>"; };
+		04C2E86526E9CCAE003E7C0C /* UIView+FLYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FLYExtension.h"; sourceTree = "<group>"; };
+		04C2E86626E9CCAE003E7C0C /* UIView+FLYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLYExtension.m"; sourceTree = "<group>"; };
+		04C2E86B26E9E511003E7C0C /* FLYServiceRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYServiceRecordCell.h; sourceTree = "<group>"; };
+		04C2E86C26E9E511003E7C0C /* FLYServiceRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYServiceRecordCell.m; sourceTree = "<group>"; };
+		04C2E86F26E9F8C2003E7C0C /* FLYDeviceListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceListViewController.h; sourceTree = "<group>"; };
+		04C2E87026E9F8C2003E7C0C /* FLYDeviceListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceListViewController.m; sourceTree = "<group>"; };
+		04C2E87226E9FA93003E7C0C /* FLYDeviceListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceListCell.h; sourceTree = "<group>"; };
+		04C2E87326E9FA93003E7C0C /* FLYDeviceListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceListCell.m; sourceTree = "<group>"; };
+		04C2E87526E9FBD0003E7C0C /* FLYFilterDeviceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFilterDeviceView.h; sourceTree = "<group>"; };
+		04C2E87626E9FBD0003E7C0C /* FLYFilterDeviceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFilterDeviceView.m; sourceTree = "<group>"; };
+		04C2E87826EA0C98003E7C0C /* FLYFilterDeviceButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFilterDeviceButton.h; sourceTree = "<group>"; };
+		04C2E87926EA0C98003E7C0C /* FLYFilterDeviceButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFilterDeviceButton.m; sourceTree = "<group>"; };
+		04C2E87B26EAF355003E7C0C /* FLYDeviceDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceDetailViewController.h; sourceTree = "<group>"; };
+		04C2E87C26EAF355003E7C0C /* FLYDeviceDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceDetailViewController.m; sourceTree = "<group>"; };
+		04C2E87E26EAF894003E7C0C /* FLYDeviceDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceDetailCell.h; sourceTree = "<group>"; };
+		04C2E87F26EAF894003E7C0C /* FLYDeviceDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceDetailCell.m; sourceTree = "<group>"; };
+		04C2E88426EB08C7003E7C0C /* FLYDeviceHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDeviceHeaderView.h; sourceTree = "<group>"; };
+		04C2E88526EB08C7003E7C0C /* FLYDeviceHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDeviceHeaderView.m; sourceTree = "<group>"; };
+		04C2E88826EB206D003E7C0C /* FLYMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMessageCell.h; sourceTree = "<group>"; };
+		04C2E88926EB206D003E7C0C /* FLYMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMessageCell.m; sourceTree = "<group>"; };
+		04C2E88C26EB3735003E7C0C /* FLYMyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMyCell.h; sourceTree = "<group>"; };
+		04C2E88D26EB3735003E7C0C /* FLYMyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMyCell.m; sourceTree = "<group>"; };
+		04C2E88F26EB3841003E7C0C /* FLYMyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMyModel.h; sourceTree = "<group>"; };
+		04C2E89026EB3841003E7C0C /* FLYMyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMyModel.m; sourceTree = "<group>"; };
+		04C2E89226EB4ACC003E7C0C /* FLYMyHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMyHeaderView.h; sourceTree = "<group>"; };
+		04C2E89326EB4ACC003E7C0C /* FLYMyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMyHeaderView.m; sourceTree = "<group>"; };
+		04C2E89926EB5503003E7C0C /* FLYFamilyListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFamilyListViewController.h; sourceTree = "<group>"; };
+		04C2E89A26EB5503003E7C0C /* FLYFamilyListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFamilyListViewController.m; sourceTree = "<group>"; };
+		04C2E89C26EB57EC003E7C0C /* FLYFamilyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFamilyCell.h; sourceTree = "<group>"; };
+		04C2E89D26EB57EC003E7C0C /* FLYFamilyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFamilyCell.m; sourceTree = "<group>"; };
+		04C2E89F26EB64CF003E7C0C /* FLYFamilyMemberListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFamilyMemberListViewController.h; sourceTree = "<group>"; };
+		04C2E8A026EB64CF003E7C0C /* FLYFamilyMemberListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFamilyMemberListViewController.m; sourceTree = "<group>"; };
+		04C2E8A226EB65AF003E7C0C /* FLYFamilyMemberCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFamilyMemberCell.h; sourceTree = "<group>"; };
+		04C2E8A326EB65AF003E7C0C /* FLYFamilyMemberCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFamilyMemberCell.m; sourceTree = "<group>"; };
+		04C2E8A526EEF07E003E7C0C /* FLYAddMemberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAddMemberViewController.h; sourceTree = "<group>"; };
+		04C2E8A626EEF07E003E7C0C /* FLYAddMemberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAddMemberViewController.m; sourceTree = "<group>"; };
+		04C2E8A826EF0288003E7C0C /* FLYMemberDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMemberDetailViewController.h; sourceTree = "<group>"; };
+		04C2E8A926EF0288003E7C0C /* FLYMemberDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMemberDetailViewController.m; sourceTree = "<group>"; };
+		04C80D3326F24B8D00FD1F62 /* FLYUserAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYUserAction.h; sourceTree = "<group>"; };
+		04C80D3426F24B8D00FD1F62 /* FLYUserAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYUserAction.m; sourceTree = "<group>"; };
+		04C80D3D26F255BA00FD1F62 /* FLYLeftTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYLeftTextField.h; sourceTree = "<group>"; };
+		04C80D3E26F255BA00FD1F62 /* FLYLeftTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYLeftTextField.m; sourceTree = "<group>"; };
+		04C80D4126F2DA7800FD1F62 /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		04C80D4226F2DA7900FD1F62 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		04C80D4426F2DA7900FD1F62 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		04E3CA2A275078660019D4AA /* FLYVersionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYVersionModel.h; sourceTree = "<group>"; };
+		04E3CA2B275078660019D4AA /* FLYVersionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYVersionModel.m; sourceTree = "<group>"; };
+		04E3CA2D27507C540019D4AA /* FLYVersionUpdateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYVersionUpdateView.h; sourceTree = "<group>"; };
+		04E3CA2E27507C540019D4AA /* FLYVersionUpdateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYVersionUpdateView.m; sourceTree = "<group>"; };
+		04E50476277AB208007C603F /* FLYScreenListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYScreenListView.m; sourceTree = "<group>"; };
+		04E50477277AB208007C603F /* FLYScreenListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYScreenListView.h; sourceTree = "<group>"; };
+		04E5047A277AD5A7007C603F /* FLYForgetLockPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYForgetLockPasswordViewController.h; sourceTree = "<group>"; };
+		04E5047B277AD5A7007C603F /* FLYForgetLockPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYForgetLockPasswordViewController.m; sourceTree = "<group>"; };
+		04E50480277D7CC6007C603F /* FLYMemberLockCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYMemberLockCell.h; sourceTree = "<group>"; };
+		04E50481277D7CC6007C603F /* FLYMemberLockCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYMemberLockCell.m; sourceTree = "<group>"; };
+		04E50483277D878F007C603F /* FLYHouseLockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYHouseLockModel.h; sourceTree = "<group>"; };
+		04E50484277D878F007C603F /* FLYHouseLockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYHouseLockModel.m; sourceTree = "<group>"; };
+		04E50486277D8AD8007C603F /* FLYLockAuthorizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYLockAuthorizeViewController.h; sourceTree = "<group>"; };
+		04E50487277D8AD8007C603F /* FLYLockAuthorizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYLockAuthorizeViewController.m; sourceTree = "<group>"; };
+		04E50489277D9250007C603F /* FLYSwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYSwitchCell.h; sourceTree = "<group>"; };
+		04E5048A277D9250007C603F /* FLYSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYSwitchCell.m; sourceTree = "<group>"; };
+		04E5048F2783E418007C603F /* FLYOpenDoorParentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOpenDoorParentViewController.h; sourceTree = "<group>"; };
+		04E504902783E418007C603F /* FLYOpenDoorParentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOpenDoorParentViewController.m; sourceTree = "<group>"; };
+		04E504932783E5B5007C603F /* FLYSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYSegmentBar.h; sourceTree = "<group>"; };
+		04E504942783E5B5007C603F /* FLYPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPageScrollView.m; sourceTree = "<group>"; };
+		04E504952783E5B5007C603F /* FLYSegmentBarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYSegmentBarConfig.h; sourceTree = "<group>"; };
+		04E504962783E5B5007C603F /* FLYSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYSegmentBar.m; sourceTree = "<group>"; };
+		04E504972783E5B5007C603F /* FLYPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYPageScrollView.h; sourceTree = "<group>"; };
+		04E504982783E5B5007C603F /* FLYSegmentBarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYSegmentBarConfig.m; sourceTree = "<group>"; };
+		04E5049C2783F880007C603F /* FLYDoorLockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYDoorLockModel.h; sourceTree = "<group>"; };
+		04E5049D2783F880007C603F /* FLYDoorLockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYDoorLockModel.m; sourceTree = "<group>"; };
+		04E5049F2783F924007C603F /* FLYOpenLockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYOpenLockModel.h; sourceTree = "<group>"; };
+		04E504A02783F924007C603F /* FLYOpenLockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYOpenLockModel.m; sourceTree = "<group>"; };
+		04E74ADD2A930B01000FE706 /* FLYInputFaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYInputFaceViewController.h; sourceTree = "<group>"; };
+		04E74ADE2A930B01000FE706 /* FLYInputFaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYInputFaceViewController.m; sourceTree = "<group>"; };
+		04E976852AB58CCA0007B2B5 /* FLYAddFingerprintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAddFingerprintViewController.h; sourceTree = "<group>"; };
+		04E976862AB58CCA0007B2B5 /* FLYAddFingerprintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAddFingerprintViewController.m; sourceTree = "<group>"; };
+		04E976882AB5A22E0007B2B5 /* FLYFingerprintNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYFingerprintNameViewController.h; sourceTree = "<group>"; };
+		04E976892AB5A22E0007B2B5 /* FLYFingerprintNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYFingerprintNameViewController.m; sourceTree = "<group>"; };
+		04F1CC9D2790186A007C25C0 /* FLYVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYVideoCell.h; sourceTree = "<group>"; };
+		04F1CC9E2790186A007C25C0 /* FLYVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYVideoCell.m; sourceTree = "<group>"; };
+		04F1CCA0279021BE007C25C0 /* FLYVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYVideoModel.h; sourceTree = "<group>"; };
+		04F1CCA1279021BE007C25C0 /* FLYVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYVideoModel.m; sourceTree = "<group>"; };
+		04FF4AAF277063B3008D4476 /* TGNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGNetworkTool.h; sourceTree = "<group>"; };
+		04FF4AB0277063B3008D4476 /* TGNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGNetworkTool.m; sourceTree = "<group>"; };
+		04FF4AB327708610008D4476 /* FLYRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYRSA.h; sourceTree = "<group>"; };
+		04FF4AB427708610008D4476 /* FLYHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYHash.h; sourceTree = "<group>"; };
+		04FF4AB527708610008D4476 /* FLYAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYAES.h; sourceTree = "<group>"; };
+		04FF4AB627708610008D4476 /* FLYBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYBase64.h; sourceTree = "<group>"; };
+		04FF4AB727708610008D4476 /* FLYRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYRSA.m; sourceTree = "<group>"; };
+		04FF4AB827708610008D4476 /* FLYHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYHash.m; sourceTree = "<group>"; };
+		04FF4AB927708610008D4476 /* FLYAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYAES.m; sourceTree = "<group>"; };
+		04FF4ABA27708610008D4476 /* FLYBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYBase64.m; sourceTree = "<group>"; };
+		13E58AF2AA420D275EFC6953 /* Pods-ProvideAged.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProvideAged.release.xcconfig"; path = "Target Support Files/Pods-ProvideAged/Pods-ProvideAged.release.xcconfig"; sourceTree = "<group>"; };
+		44E7A90FDED64A1BE4CEDB9F /* Pods_ProvideAged.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProvideAged.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9443B86D8F65D0E4B4B3188 /* Pods-ProvideAged.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProvideAged.debug.xcconfig"; path = "Target Support Files/Pods-ProvideAged/Pods-ProvideAged.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0407515F26E60485005A97FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041508762771BC3600D58078 /* TGIOT.framework in Frameworks */,
+				4A418DE5D972D3B8D2942328 /* Pods_ProvideAged.framework in Frameworks */,
+				0415088B2772CA1400D58078 /* ICINSmartLockSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0407515926E60485005A97FF = {
+			isa = PBXGroup;
+			children = (
+				0407516426E60485005A97FF /* ProvideAged */,
+				0407516326E60485005A97FF /* Products */,
+				0FD18BA9CABAD6B13483BE28 /* Pods */,
+				79150043B40EB645CF431492 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0407516326E60485005A97FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0407516226E60485005A97FF /* ProvideAged.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0407516426E60485005A97FF /* ProvideAged */ = {
+			isa = PBXGroup;
+			children = (
+				047FDF9426F5C5100005DBAB /* ProvideAged.entitlements */,
+				0407518426E60D21005A97FF /* Main */,
+				0407518026E60B5B005A97FF /* NetWork */,
+				0407517E26E60B54005A97FF /* Class */,
+				0407517F26E60B57005A97FF /* Category */,
+				046D192726E61E4F00D9FD46 /* Tools */,
+				0407518526E60E75005A97FF /* 3rd */,
+				0407518626E60E89005A97FF /* Constant */,
+				0407518826E60EB3005A97FF /* Resource */,
+				046D190B26E6184800D9FD46 /* Original */,
+				045D578C27704D7A003B240D /* Frameworks */,
+				046D192826E61E7E00D9FD46 /* Other */,
+			);
+			path = ProvideAged;
+			sourceTree = "<group>";
+		};
+		0407517E26E60B54005A97FF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				042879C527796678001069C0 /* UITextField */,
+				046D19C426E7365C00D9FD46 /* UIViewController */,
+				046D198926E6FEBB00D9FD46 /* UIButton */,
+				046D198326E6FEBA00D9FD46 /* UILabel */,
+				046D198626E6FEBB00D9FD46 /* UITextView */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0407517F26E60B57005A97FF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				046D195526E6FE7D00D9FD46 /* NSArray */,
+				046D195E26E6FE7E00D9FD46 /* NSDate */,
+				046D196126E6FE7E00D9FD46 /* NSDictionary */,
+				046D194A26E6FE7D00D9FD46 /* NSString */,
+				046D196426E6FE7E00D9FD46 /* UIAlertController */,
+				046D195B26E6FE7E00D9FD46 /* UIButton */,
+				046D196E26E6FE7E00D9FD46 /* UICollectionView */,
+				046D197126E6FE7E00D9FD46 /* UIColor */,
+				046D195826E6FE7E00D9FD46 /* UIImage */,
+				046D194F26E6FE7D00D9FD46 /* UIImageView */,
+				046D195226E6FE7D00D9FD46 /* UITableView */,
+				046D196726E6FE7E00D9FD46 /* UIView */,
+				046D19BC26E7160100D9FD46 /* UIBarButtonItem */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0407518026E60B5B005A97FF /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				046D87BD272FDA590069680C /* FLYNetworkTool.h */,
+				046D87BE272FDA590069680C /* FLYNetworkTool.m */,
+				04FF4AAF277063B3008D4476 /* TGNetworkTool.h */,
+				04FF4AB0277063B3008D4476 /* TGNetworkTool.m */,
+				046D87BB272FDA590069680C /* FLYNetwork.h */,
+				046D87BC272FDA590069680C /* FLYNetwork.m */,
+				04C80D4426F2DA7900FD1F62 /* UIImageView+SDWebImage.h */,
+				04C80D4226F2DA7900FD1F62 /* UIImageView+SDWebImage.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		0407518126E60B5E005A97FF /* My */ = {
+			isa = PBXGroup;
+			children = (
+				046D192626E61DFC00D9FD46 /* Model */,
+				046D192526E61DFA00D9FD46 /* View */,
+				046D192426E61DF700D9FD46 /* Controller */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		0407518226E60B61005A97FF /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				046D192326E61DF300D9FD46 /* Model */,
+				046D192226E61DF100D9FD46 /* View */,
+				046D192126E61DEF00D9FD46 /* Controller */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		0407518326E60B66005A97FF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				046D192026E61DEB00D9FD46 /* Model */,
+				046D191F26E61DE800D9FD46 /* View */,
+				046D191E26E61DE600D9FD46 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0407518426E60D21005A97FF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				046D192926E61F4000D9FD46 /* Public */,
+				046D193326E620D500D9FD46 /* Nav&TabBar */,
+				0407518326E60B66005A97FF /* Home */,
+				0415088C27741CE800D58078 /* OpenDoor */,
+				0407518226E60B61005A97FF /* Message */,
+				0407518126E60B5E005A97FF /* My */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0407518526E60E75005A97FF /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		0407518626E60E89005A97FF /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				04C80D4126F2DA7800FD1F62 /* APIConfig.h */,
+				046D19AD26E6FF6E00D9FD46 /* FLYMacros.h */,
+				046D19AC26E6FF6E00D9FD46 /* PrefixHeader.pch */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		0407518826E60EB3005A97FF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0407517126E6048B005A97FF /* Assets.xcassets */,
+				0407517626E6048B005A97FF /* Info.plist */,
+				046D194826E6253700D9FD46 /* Tabbar.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		040D46FF2A90976F0063DEC5 /* 健康报告 */ = {
+			isa = PBXGroup;
+			children = (
+				040D47012A9097990063DEC5 /* HealthReportViewController.h */,
+				040D47002A9097990063DEC5 /* HealthReportViewController.m */,
+			);
+			path = "健康报告";
+			sourceTree = "<group>";
+		};
+		041508792772BFC800D58078 /* 视频监护 */ = {
+			isa = PBXGroup;
+			children = (
+				0415087A2772C05A00D58078 /* FLYVideoListViewController.h */,
+				0415087B2772C05A00D58078 /* FLYVideoListViewController.m */,
+			);
+			path = "视频监护";
+			sourceTree = "<group>";
+		};
+		0415087D2772C80100D58078 /* 紫光 */ = {
+			isa = PBXGroup;
+			children = (
+				041508812772C84900D58078 /* FLYZiGuangManager.h */,
+				041508822772C84900D58078 /* FLYZiGuangManager.m */,
+				0415087E2772C83300D58078 /* FLYZiGuang.h */,
+				0415087F2772C83300D58078 /* FLYZiGuang.m */,
+				041508842772C85F00D58078 /* FLYZiGuangNetwork.h */,
+				041508852772C85F00D58078 /* FLYZiGuangNetwork.m */,
+				041508872772C8A100D58078 /* FLYZiGuangModel.h */,
+				041508882772C8A100D58078 /* FLYZiGuangModel.m */,
+				0415088A2772CA1400D58078 /* ICINSmartLockSDK.framework */,
+			);
+			path = "紫光";
+			sourceTree = "<group>";
+		};
+		0415088C27741CE800D58078 /* OpenDoor */ = {
+			isa = PBXGroup;
+			children = (
+				0415088F27741CF700D58078 /* Model */,
+				0415088E27741CF500D58078 /* View */,
+				0415088D27741CF200D58078 /* Controller */,
+			);
+			path = OpenDoor;
+			sourceTree = "<group>";
+		};
+		0415088D27741CF200D58078 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E5048F2783E418007C603F /* FLYOpenDoorParentViewController.h */,
+				04E504902783E418007C603F /* FLYOpenDoorParentViewController.m */,
+				0415089027741D2200D58078 /* FLYOpenDoorViewController.h */,
+				0415089127741D2200D58078 /* FLYOpenDoorViewController.m */,
+				04E74ADD2A930B01000FE706 /* FLYInputFaceViewController.h */,
+				04E74ADE2A930B01000FE706 /* FLYInputFaceViewController.m */,
+				041311A22AAC047D00A4B4A0 /* FLYFingerprintViewController.h */,
+				041311A32AAC047D00A4B4A0 /* FLYFingerprintViewController.m */,
+				041311A82AB049C600A4B4A0 /* FLYFingerprintTipsViewController.h */,
+				041311A92AB049C600A4B4A0 /* FLYFingerprintTipsViewController.m */,
+				04E976852AB58CCA0007B2B5 /* FLYAddFingerprintViewController.h */,
+				04E976862AB58CCA0007B2B5 /* FLYAddFingerprintViewController.m */,
+				04E976882AB5A22E0007B2B5 /* FLYFingerprintNameViewController.h */,
+				04E976892AB5A22E0007B2B5 /* FLYFingerprintNameViewController.m */,
+				041508992774707100D58078 /* 临时授权 */,
+				042879CF2779A512001069C0 /* 开门记录 */,
+				04E50479277AD520007C603F /* 忘记密码 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0415088E27741CF500D58078 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041508932774246700D58078 /* FLYOpenDoorView.h */,
+				041508942774246700D58078 /* FLYOpenDoorView.m */,
+				04150896277452C000D58078 /* FLYOpenDoorMenuView.h */,
+				04150897277452C000D58078 /* FLYOpenDoorMenuView.m */,
+				04E50477277AB208007C603F /* FLYScreenListView.h */,
+				04E50476277AB208007C603F /* FLYScreenListView.m */,
+				04833F2A27854AFE00963E5A /* FLYOpenDoorResultView.h */,
+				04833F2B27854AFE00963E5A /* FLYOpenDoorResultView.m */,
+				041508A327756B0000D58078 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0415088F27741CF700D58078 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E5049C2783F880007C603F /* FLYDoorLockModel.h */,
+				04E5049D2783F880007C603F /* FLYDoorLockModel.m */,
+				04E5049F2783F924007C603F /* FLYOpenLockModel.h */,
+				04E504A02783F924007C603F /* FLYOpenLockModel.m */,
+				0494166027842BFC0037AFE7 /* FLYAuthorizeModel.h */,
+				0494166127842BFC0037AFE7 /* FLYAuthorizeModel.m */,
+				04833F27278453F800963E5A /* FLYOpenRecordModel.h */,
+				04833F28278453F800963E5A /* FLYOpenRecordModel.m */,
+				041311A52AB042F900A4B4A0 /* FLYFingerprintModel.h */,
+				041311A62AB042F900A4B4A0 /* FLYFingerprintModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		041508992774707100D58078 /* 临时授权 */ = {
+			isa = PBXGroup;
+			children = (
+				0415089A277470AD00D58078 /* FLYTempAuthorizeListViewController.h */,
+				0415089B277470AD00D58078 /* FLYTempAuthorizeListViewController.m */,
+				042879BC2775B894001069C0 /* FLYTempAuthorizeViewController.h */,
+				042879BD2775B894001069C0 /* FLYTempAuthorizeViewController.m */,
+				042879D32779A6BB001069C0 /* FLYAuthorizeDetailViewController.h */,
+				042879D42779A6BB001069C0 /* FLYAuthorizeDetailViewController.m */,
+			);
+			path = "临时授权";
+			sourceTree = "<group>";
+		};
+		041508A327756B0000D58078 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				041508A427756B2000D58078 /* FLYTempAuthorizeCell.h */,
+				041508A527756B2000D58078 /* FLYTempAuthorizeCell.m */,
+				04E50489277D9250007C603F /* FLYSwitchCell.h */,
+				04E5048A277D9250007C603F /* FLYSwitchCell.m */,
+				042879BF27795362001069C0 /* FLYOptionCell.h */,
+				042879C027795362001069C0 /* FLYOptionCell.m */,
+				042879C227796328001069C0 /* FLYSelectCell.h */,
+				042879C327796328001069C0 /* FLYSelectCell.m */,
+				042879C9277987E8001069C0 /* FLYInputCell.h */,
+				042879CA277987E9001069C0 /* FLYInputCell.m */,
+				042879CC27798A4F001069C0 /* FLYInputTipsCell.h */,
+				042879CD27798A4F001069C0 /* FLYInputTipsCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		042879C527796678001069C0 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				043F1A9B295306B600F57F9A /* FLYTextField.h */,
+				043F1A9C295306B600F57F9A /* FLYTextField.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		042879CF2779A512001069C0 /* 开门记录 */ = {
+			isa = PBXGroup;
+			children = (
+				042879D62779B97A001069C0 /* FLYOpenRecordListViewController.h */,
+				042879D72779B97A001069C0 /* FLYOpenRecordListViewController.m */,
+			);
+			path = "开门记录";
+			sourceTree = "<group>";
+		};
+		043F1A6429529E5700F57F9A /* 智能药盒 */ = {
+			isa = PBXGroup;
+			children = (
+				043F1A6529529ED800F57F9A /* FLYMedicineBoxMenuViewController.h */,
+				043F1A6629529ED800F57F9A /* FLYMedicineBoxMenuViewController.m */,
+				043F1A7D2952D46500F57F9A /* FLYDrugListViewController.h */,
+				043F1A7E2952D46500F57F9A /* FLYDrugListViewController.m */,
+				043F1A832952E17C00F57F9A /* FLYAddDrugViewController.h */,
+				043F1A842952E17C00F57F9A /* FLYAddDrugViewController.m */,
+				043F1A6E2952A4BA00F57F9A /* FLYBoxSetupTimeViewController.h */,
+				043F1A6F2952A4BA00F57F9A /* FLYBoxSetupTimeViewController.m */,
+				043F1A8C2952ECA800F57F9A /* FLYDrugRemindViewController.h */,
+				043F1A8D2952ECA800F57F9A /* FLYDrugRemindViewController.m */,
+				043F1A922952FA5F00F57F9A /* FLYAddDrugRemindViewController.h */,
+				043F1A932952FA5F00F57F9A /* FLYAddDrugRemindViewController.m */,
+				043F1A772952AD5700F57F9A /* FLYMedicationRecordViewController.h */,
+				043F1A782952AD5700F57F9A /* FLYMedicationRecordViewController.m */,
+			);
+			path = "智能药盒";
+			sourceTree = "<group>";
+		};
+		0443392826F33392004ED0EE /* 运动轨迹 */ = {
+			isa = PBXGroup;
+			children = (
+				0443392926F333B5004ED0EE /* FLYMapViewController.h */,
+				0443392A26F333B5004ED0EE /* FLYMapViewController.m */,
+				04558A9E27350ED300C9F918 /* FLYStepHistoryViewController.h */,
+				04558A9F27350ED300C9F918 /* FLYStepHistoryViewController.m */,
+				04796B96273A85C400F51EB7 /* FLYTrackViewController.h */,
+				04796B97273A85C400F51EB7 /* FLYTrackViewController.m */,
+			);
+			path = "运动轨迹";
+			sourceTree = "<group>";
+		};
+		04558A942734D5CD00C9F918 /* 联系老人 */ = {
+			isa = PBXGroup;
+			children = (
+				04558A952734D67300C9F918 /* FLYSendMessageViewController.h */,
+				04558A962734D67300C9F918 /* FLYSendMessageViewController.m */,
+			);
+			path = "联系老人";
+			sourceTree = "<group>";
+		};
+		045D578C27704D7A003B240D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045D578F27705604003B240D /* 探鸽 */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		045D578F27705604003B240D /* 探鸽 */ = {
+			isa = PBXGroup;
+			children = (
+				0476C3782771706F008FAE38 /* TGIOT.framework */,
+				045D5792277056C2003B240D /* AMap.bundle */,
+			);
+			path = "探鸽";
+			sourceTree = "<group>";
+		};
+		046D190B26E6184800D9FD46 /* Original */ = {
+			isa = PBXGroup;
+			children = (
+				0407516526E60485005A97FF /* AppDelegate.h */,
+				0407516626E60485005A97FF /* AppDelegate.m */,
+				0407517726E6048B005A97FF /* main.m */,
+				0407517326E6048B005A97FF /* LaunchScreen.storyboard */,
+			);
+			path = Original;
+			sourceTree = "<group>";
+		};
+		046D191E26E61DE600D9FD46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046D19DE26E7393600D9FD46 /* FLYHomeViewController.h */,
+				046D19DF26E7393600D9FD46 /* FLYHomeViewController.m */,
+				046D19F326E74C4F00D9FD46 /* FLYPersonalHomeViewController.h */,
+				046D19F426E74C4F00D9FD46 /* FLYPersonalHomeViewController.m */,
+				04C2E84426E89BAC003E7C0C /* 健康档案 */,
+				041508792772BFC800D58078 /* 视频监护 */,
+				0443392826F33392004ED0EE /* 运动轨迹 */,
+				043F1A6429529E5700F57F9A /* 智能药盒 */,
+				04C2E85826E8A99A003E7C0C /* 服务记录 */,
+				04558A942734D5CD00C9F918 /* 联系老人 */,
+				04C2E86E26E9F888003E7C0C /* 设备管理 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046D191F26E61DE800D9FD46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046D19F926E7556200D9FD46 /* FLYElderlyBaseInfoView.h */,
+				046D19FA26E7556200D9FD46 /* FLYElderlyBaseInfoView.m */,
+				046D19F626E7522A00D9FD46 /* FLYCircularView.h */,
+				046D19F726E7522A00D9FD46 /* FLYCircularView.m */,
+				046D19FC26E75BB600D9FD46 /* FLYElderlyMenuView.h */,
+				046D19FD26E75BB600D9FD46 /* FLYElderlyMenuView.m */,
+				046D19FF26E76A8000D9FD46 /* FLYElderlyMenuButtom.h */,
+				046D1A0026E76A8000D9FD46 /* FLYElderlyMenuButtom.m */,
+				046D1A0226E76CD100D9FD46 /* FLYDeviceStatusView.h */,
+				046D1A0326E76CD100D9FD46 /* FLYDeviceStatusView.m */,
+				047A39CC27326181009F484A /* FLYMotionView.h */,
+				047A39CD27326181009F484A /* FLYMotionView.m */,
+				043F1A612951BBD400F57F9A /* FLYMedicineBoxView.h */,
+				043F1A622951BBD400F57F9A /* FLYMedicineBoxView.m */,
+				04C2E87526E9FBD0003E7C0C /* FLYFilterDeviceView.h */,
+				04C2E87626E9FBD0003E7C0C /* FLYFilterDeviceView.m */,
+				04C2E87826EA0C98003E7C0C /* FLYFilterDeviceButton.h */,
+				04C2E87926EA0C98003E7C0C /* FLYFilterDeviceButton.m */,
+				04BEC51A273375C800C72188 /* FLYPhysiologicalCircleView.h */,
+				04BEC51B273375C800C72188 /* FLYPhysiologicalCircleView.m */,
+				04BEC520273386C300C72188 /* FLYPhysiologicalChartView.h */,
+				04BEC521273386C300C72188 /* FLYPhysiologicalChartView.m */,
+				047EA3CC27420937009C26C7 /* FLYLineChartView.h */,
+				047EA3CD27420937009C26C7 /* FLYLineChartView.m */,
+				04558A9B2734F4E900C9F918 /* FLYMapDetailView.h */,
+				04558A9C2734F4E900C9F918 /* FLYMapDetailView.m */,
+				04796B9C273B722600F51EB7 /* FLYTrackView.h */,
+				04796B9D273B722600F51EB7 /* FLYTrackView.m */,
+				0486585F27549A5500BF296F /* FLYDeviceSegmentBar.h */,
+				0486586027549A5500BF296F /* FLYDeviceSegmentBar.m */,
+				043F1A952952FBFB00F57F9A /* FLYWhiteTitleNavView.h */,
+				043F1A962952FBFB00F57F9A /* FLYWhiteTitleNavView.m */,
+				043F1A982953040300F57F9A /* FLYDrugQueryView.h */,
+				043F1A992953040300F57F9A /* FLYDrugQueryView.m */,
+				043F1A9E29530F7600F57F9A /* FLYRemindSelectView.h */,
+				043F1A9F29530F7600F57F9A /* FLYRemindSelectView.m */,
+				043F1AA12953F19D00F57F9A /* FLYTimePointView.h */,
+				043F1AA22953F19D00F57F9A /* FLYTimePointView.m */,
+				043F1AA42954066B00F57F9A /* FLYQueryListView.h */,
+				043F1AA52954066B00F57F9A /* FLYQueryListView.m */,
+				040D47062A90980B0063DEC5 /* DatePickerView.h */,
+				040D47032A90980B0063DEC5 /* DatePickerView.m */,
+				040D47042A90980B0063DEC5 /* HealthTitleView.h */,
+				040D47052A90980B0063DEC5 /* HealthTitleView.m */,
+				04C2E84826E89F6C003E7C0C /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046D192026E61DEB00D9FD46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0443391F26F31D69004ED0EE /* FLYElderModel.h */,
+				0443392026F31D69004ED0EE /* FLYElderModel.m */,
+				0443392226F32804004ED0EE /* FLYSysDicModel.h */,
+				0443392326F32804004ED0EE /* FLYSysDicModel.m */,
+				0443392526F32FE2004ED0EE /* FLYServiceModel.h */,
+				0443392626F32FE2004ED0EE /* FLYServiceModel.m */,
+				0443392C26F338E9004ED0EE /* FLYDeviceStatusModel.h */,
+				0443392D26F338E9004ED0EE /* FLYDeviceStatusModel.m */,
+				0443392F26F34495004ED0EE /* FLYDeviceModel.h */,
+				0443393026F34496004ED0EE /* FLYDeviceModel.m */,
+				0443393226F351D5004ED0EE /* FLYWarningModel.h */,
+				0443393326F351D5004ED0EE /* FLYWarningModel.m */,
+				0443393526F3526C004ED0EE /* FLYDoorRecordModel.h */,
+				0443393626F3526C004ED0EE /* FLYDoorRecordModel.m */,
+				04558A852733C8EA00C9F918 /* FLYYearMonthGroupModel.h */,
+				04558A862733C8EA00C9F918 /* FLYYearMonthGroupModel.m */,
+				04558A912733DB9600C9F918 /* FLYDeviceClassificationModel.h */,
+				04558A922733DB9600C9F918 /* FLYDeviceClassificationModel.m */,
+				04558A982734DBD200C9F918 /* FLYAnnotationModel.h */,
+				04558A992734DBD200C9F918 /* FLYAnnotationModel.m */,
+				04796B8D273A3E1A00F51EB7 /* FLYStepModel.h */,
+				04796B8E273A3E1A00F51EB7 /* FLYStepModel.m */,
+				04796B99273B64C400F51EB7 /* FLYTrackModel.h */,
+				04796B9A273B64C400F51EB7 /* FLYTrackModel.m */,
+				047EA3C9273E03BE009C26C7 /* FLYHealthModel.h */,
+				047EA3CA273E03BE009C26C7 /* FLYHealthModel.m */,
+				04729B612744A6B8007D0F48 /* FLYChatRecordModel.h */,
+				04729B622744A6B8007D0F48 /* FLYChatRecordModel.m */,
+				048658652754B4C100BF296F /* FLYBedRecordModel.h */,
+				048658662754B4C100BF296F /* FLYBedRecordModel.m */,
+				04F1CCA0279021BE007C25C0 /* FLYVideoModel.h */,
+				04F1CCA1279021BE007C25C0 /* FLYVideoModel.m */,
+				043F1A682952A09400F57F9A /* FLYBoxMenuModel.h */,
+				043F1A692952A09400F57F9A /* FLYBoxMenuModel.m */,
+				043F1A712952A59300F57F9A /* FLYBoxTimeModel.h */,
+				043F1A722952A59300F57F9A /* FLYBoxTimeModel.m */,
+				043F1A862952E54D00F57F9A /* FLYAddDrugModel.h */,
+				043F1A872952E54D00F57F9A /* FLYAddDrugModel.m */,
+				043576DB295C155B00C8DFA5 /* FLYDrugModel.h */,
+				043576DC295C155B00C8DFA5 /* FLYDrugModel.m */,
+				043576DE295C29C000C8DFA5 /* FLYBoxInfoModel.h */,
+				043576DF295C29C000C8DFA5 /* FLYBoxInfoModel.m */,
+				043576E1295C31E200C8DFA5 /* FLYMedicationRecordModel.h */,
+				043576E2295C31E200C8DFA5 /* FLYMedicationRecordModel.m */,
+				043576E4295D841000C8DFA5 /* FLYDrugRemindModel.h */,
+				043576E5295D841000C8DFA5 /* FLYDrugRemindModel.m */,
+				0468C4B529C9A78600C61492 /* FLYDeviceLocationModel.h */,
+				0468C4B629C9A78600C61492 /* FLYDeviceLocationModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046D192126E61DEF00D9FD46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046D19E126E7395800D9FD46 /* FLYMessageViewController.h */,
+				046D19E226E7395800D9FD46 /* FLYMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046D192226E61DF100D9FD46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E88726EB2050003E7C0C /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046D192326E61DF300D9FD46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0443393826F42FE5004ED0EE /* FLYMessageModel.h */,
+				0443393926F42FE5004ED0EE /* FLYMessageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046D192426E61DF700D9FD46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0488CE3F26F1A038000CE201 /* 登录 */,
+				046D19E426E7396900D9FD46 /* FLYMyViewController.h */,
+				046D19E526E7396900D9FD46 /* FLYMyViewController.m */,
+				04C2E89826EB54D2003E7C0C /* 家属管理 */,
+				0488CE3B26F18946000CE201 /* 意见反馈 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046D192526E61DFA00D9FD46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E88B26EB3724003E7C0C /* Cell */,
+				04C2E89226EB4ACC003E7C0C /* FLYMyHeaderView.h */,
+				04C2E89326EB4ACC003E7C0C /* FLYMyHeaderView.m */,
+				04C80D3D26F255BA00FD1F62 /* FLYLeftTextField.h */,
+				04C80D3E26F255BA00FD1F62 /* FLYLeftTextField.m */,
+				04E3CA2D27507C540019D4AA /* FLYVersionUpdateView.h */,
+				04E3CA2E27507C540019D4AA /* FLYVersionUpdateView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046D192626E61DFC00D9FD46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E88F26EB3841003E7C0C /* FLYMyModel.h */,
+				04C2E89026EB3841003E7C0C /* FLYMyModel.m */,
+				0443391C26F31158004ED0EE /* FLYUserModel.h */,
+				0443391D26F31158004ED0EE /* FLYUserModel.m */,
+				04AA621C26F587A2006479D2 /* FLYFamilyModel.h */,
+				04AA621D26F587A2006479D2 /* FLYFamilyModel.m */,
+				04AA621F26F58AF0006479D2 /* FLYMemberModel.h */,
+				04AA622026F58AF0006479D2 /* FLYMemberModel.m */,
+				04E3CA2A275078660019D4AA /* FLYVersionModel.h */,
+				04E3CA2B275078660019D4AA /* FLYVersionModel.m */,
+				04E50483277D878F007C603F /* FLYHouseLockModel.h */,
+				04E50484277D878F007C603F /* FLYHouseLockModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046D192726E61E4F00D9FD46 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0415087D2772C80100D58078 /* 紫光 */,
+				046D19E926E73DF000D9FD46 /* UITools */,
+				046D19E826E73DED00D9FD46 /* FunctionTools */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		046D192826E61E7E00D9FD46 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				047EA3CF27420E95009C26C7 /* ProvideAged-Bridging-Header.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		046D192926E61F4000D9FD46 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E84E26E8A2B9003E7C0C /* Model */,
+				04C2E84D26E8A2B5003E7C0C /* View */,
+				04C2E84C26E8A2B3003E7C0C /* Controller */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		046D193326E620D500D9FD46 /* Nav&TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				046D193426E6211E00D9FD46 /* FLYNavigationController.h */,
+				046D193526E6211E00D9FD46 /* FLYNavigationController.m */,
+				046D193726E6213100D9FD46 /* FLYTabBarController.h */,
+				046D193826E6213100D9FD46 /* FLYTabBarController.m */,
+			);
+			path = "Nav&TabBar";
+			sourceTree = "<group>";
+		};
+		046D194A26E6FE7D00D9FD46 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				04833F242784500400963E5A /* NSString+FLYExtension.h */,
+				04833F252784500400963E5A /* NSString+FLYExtension.m */,
+				046D194B26E6FE7D00D9FD46 /* NSString+FLYEncryption.m */,
+				046D194C26E6FE7D00D9FD46 /* NSString+FLYVerification.h */,
+				046D194D26E6FE7D00D9FD46 /* NSString+FLYVerification.m */,
+				046D194E26E6FE7D00D9FD46 /* NSString+FLYEncryption.h */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		046D194F26E6FE7D00D9FD46 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				046D195026E6FE7D00D9FD46 /* UIImageView+FLYExtension.m */,
+				046D195126E6FE7D00D9FD46 /* UIImageView+FLYExtension.h */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		046D195226E6FE7D00D9FD46 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				046D195326E6FE7D00D9FD46 /* UITableView+FLYRefresh.m */,
+				046D195426E6FE7D00D9FD46 /* UITableView+FLYRefresh.h */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		046D195526E6FE7D00D9FD46 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				046D195626E6FE7D00D9FD46 /* NSArray+FLYUnicode.h */,
+				046D195726E6FE7D00D9FD46 /* NSArray+FLYUnicode.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		046D195826E6FE7E00D9FD46 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				046D195926E6FE7E00D9FD46 /* UIImage+FLYExtension.h */,
+				046D195A26E6FE7E00D9FD46 /* UIImage+FLYExtension.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		046D195B26E6FE7E00D9FD46 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				046D195D26E6FE7E00D9FD46 /* UIButton+FLYExtension.h */,
+				046D195C26E6FE7E00D9FD46 /* UIButton+FLYExtension.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		046D195E26E6FE7E00D9FD46 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				046D196026E6FE7E00D9FD46 /* NSDate+FLYExtension.h */,
+				046D195F26E6FE7E00D9FD46 /* NSDate+FLYExtension.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		046D196126E6FE7E00D9FD46 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				046D196226E6FE7E00D9FD46 /* NSDictionary+FLYUnicode.h */,
+				046D196326E6FE7E00D9FD46 /* NSDictionary+FLYUnicode.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		046D196426E6FE7E00D9FD46 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				046D196526E6FE7E00D9FD46 /* UIAlertController+FLYExtension.m */,
+				046D196626E6FE7E00D9FD46 /* UIAlertController+FLYExtension.h */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
+		046D196726E6FE7E00D9FD46 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				046D196826E6FE7E00D9FD46 /* UIView+FLYFrame.h */,
+				046D196B26E6FE7E00D9FD46 /* UIView+FLYFrame.m */,
+				046D196926E6FE7E00D9FD46 /* UIView+FLYLayer.h */,
+				046D196C26E6FE7E00D9FD46 /* UIView+FLYLayer.m */,
+				046D196A26E6FE7E00D9FD46 /* UIView+FLYLayoutConstraint.h */,
+				046D196D26E6FE7E00D9FD46 /* UIView+FLYLayoutConstraint.m */,
+				04C2E86526E9CCAE003E7C0C /* UIView+FLYExtension.h */,
+				04C2E86626E9CCAE003E7C0C /* UIView+FLYExtension.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		046D196E26E6FE7E00D9FD46 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				046D196F26E6FE7E00D9FD46 /* UICollectionView+FLYRefresh.h */,
+				046D197026E6FE7E00D9FD46 /* UICollectionView+FLYRefresh.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		046D197126E6FE7E00D9FD46 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				04BEC51D27337ACB00C72188 /* UIColor+FLYHex.h */,
+				04BEC51E27337ACB00C72188 /* UIColor+FLYHex.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		046D198326E6FEBA00D9FD46 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				046D198426E6FEBA00D9FD46 /* FLYLabel.h */,
+				046D198526E6FEBA00D9FD46 /* FLYLabel.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		046D198626E6FEBB00D9FD46 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				046D198826E6FEBB00D9FD46 /* FLYTextView.h */,
+				046D198726E6FEBB00D9FD46 /* FLYTextView.m */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		046D198926E6FEBB00D9FD46 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				046D198D26E6FEBB00D9FD46 /* FLYButton.h */,
+				046D198B26E6FEBB00D9FD46 /* FLYButton.m */,
+				046D198A26E6FEBB00D9FD46 /* FLYCountdownButton.h */,
+				046D198C26E6FEBB00D9FD46 /* FLYCountdownButton.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		046D199226E6FEFB00D9FD46 /* File(文件管理者) */ = {
+			isa = PBXGroup;
+			children = (
+				046D199326E6FEFB00D9FD46 /* FLYFileManager.m */,
+				046D199426E6FEFB00D9FD46 /* FLYFileManager.h */,
+			);
+			path = "File(文件管理者)";
+			sourceTree = "<group>";
+		};
+		046D199526E6FEFC00D9FD46 /* Audio(音效) */ = {
+			isa = PBXGroup;
+			children = (
+				046D199626E6FEFC00D9FD46 /* FLYAudioTools.h */,
+				046D199726E6FEFC00D9FD46 /* FLYAudioTools.m */,
+			);
+			path = "Audio(音效)";
+			sourceTree = "<group>";
+		};
+		046D199826E6FEFC00D9FD46 /* FLYPopupView(弹窗) */ = {
+			isa = PBXGroup;
+			children = (
+				046D199926E6FEFC00D9FD46 /* FLYPopupView.h */,
+				046D199A26E6FEFC00D9FD46 /* FLYPopupView.m */,
+			);
+			path = "FLYPopupView(弹窗)";
+			sourceTree = "<group>";
+		};
+		046D199F26E6FEFC00D9FD46 /* Photo(相册) */ = {
+			isa = PBXGroup;
+			children = (
+				046D19A026E6FEFC00D9FD46 /* FLYPhotoManager.h */,
+				046D19A126E6FEFC00D9FD46 /* FLYPhotoManager.m */,
+			);
+			path = "Photo(相册)";
+			sourceTree = "<group>";
+		};
+		046D19A226E6FEFC00D9FD46 /* Time(时间) */ = {
+			isa = PBXGroup;
+			children = (
+				046D19A326E6FEFC00D9FD46 /* FLYTime.m */,
+				046D19A426E6FEFC00D9FD46 /* FLYTime.h */,
+			);
+			path = "Time(时间)";
+			sourceTree = "<group>";
+		};
+		046D19BC26E7160100D9FD46 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				046D19BD26E7162800D9FD46 /* UIBarButtonItem+FLYExtension.h */,
+				046D19BE26E7162800D9FD46 /* UIBarButtonItem+FLYExtension.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		046D19C426E7365C00D9FD46 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				046D19C526E7368E00D9FD46 /* FLYViewController.h */,
+				046D19C626E7368E00D9FD46 /* FLYViewController.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		046D19E826E73DED00D9FD46 /* FunctionTools */ = {
+			isa = PBXGroup;
+			children = (
+				043E8510279808980018EA28 /* FLYUtility.h */,
+				043E850F279808980018EA28 /* FLYUtility.m */,
+				04FF4AB227708610008D4476 /* Encryption(加密解密) */,
+				046D199F26E6FEFC00D9FD46 /* Photo(相册) */,
+				046D19A226E6FEFC00D9FD46 /* Time(时间) */,
+				046D199526E6FEFC00D9FD46 /* Audio(音效) */,
+				046D199226E6FEFB00D9FD46 /* File(文件管理者) */,
+				04C80D3226F24B6800FD1F62 /* FLYUser */,
+				046D199D26E6FEFC00D9FD46 /* FLYTools.h */,
+				046D199B26E6FEFC00D9FD46 /* FLYTools.m */,
+				046D199C26E6FEFC00D9FD46 /* FLYDeviceManager.h */,
+				046D199E26E6FEFC00D9FD46 /* FLYDeviceManager.m */,
+			);
+			path = FunctionTools;
+			sourceTree = "<group>";
+		};
+		046D19E926E73DF000D9FD46 /* UITools */ = {
+			isa = PBXGroup;
+			children = (
+				04E504922783E5B5007C603F /* FLYSegmentBar */,
+				046D199826E6FEFC00D9FD46 /* FLYPopupView(弹窗) */,
+			);
+			path = UITools;
+			sourceTree = "<group>";
+		};
+		0488CE3B26F18946000CE201 /* 意见反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				0488CE3C26F1896A000CE201 /* FLYOpinionViewController.h */,
+				0488CE3D26F1896A000CE201 /* FLYOpinionViewController.m */,
+			);
+			path = "意见反馈";
+			sourceTree = "<group>";
+		};
+		0488CE3F26F1A038000CE201 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				0488CE4026F1A0E9000CE201 /* FLYLoginViewController.h */,
+				0488CE4126F1A0E9000CE201 /* FLYLoginViewController.m */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		04BEC51527329B9500C72188 /* 生理数据 */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E84126E89B9C003E7C0C /* FLYPhysiologicalViewController.h */,
+				04C2E84226E89B9C003E7C0C /* FLYPhysiologicalViewController.m */,
+				04BEC51727329BE300C72188 /* FLYPhysiologicalChartViewController.h */,
+				04BEC51827329BE300C72188 /* FLYPhysiologicalChartViewController.m */,
+				04558A7C2733A9D600C9F918 /* FLYPhysiologicalHistoryListViewController.h */,
+				04558A7D2733A9D600C9F918 /* FLYPhysiologicalHistoryListViewController.m */,
+			);
+			path = "生理数据";
+			sourceTree = "<group>";
+		};
+		04BEC51627329BA800C72188 /* 基本信息 */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E84526E89C36003E7C0C /* FLYPersonalBaseInfoViewController.h */,
+				04C2E84626E89C36003E7C0C /* FLYPersonalBaseInfoViewController.m */,
+			);
+			path = "基本信息";
+			sourceTree = "<group>";
+		};
+		04C2E84426E89BAC003E7C0C /* 健康档案 */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E83526E85E7E003E7C0C /* FLYHealthRecordViewController.h */,
+				04C2E83626E85E7E003E7C0C /* FLYHealthRecordViewController.m */,
+				04BEC51527329B9500C72188 /* 生理数据 */,
+				04BEC51627329BA800C72188 /* 基本信息 */,
+				040D46FF2A90976F0063DEC5 /* 健康报告 */,
+			);
+			path = "健康档案";
+			sourceTree = "<group>";
+		};
+		04C2E84826E89F6C003E7C0C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E84926E89F7E003E7C0C /* FLYPersonalBaseInfoCell.h */,
+				04C2E84A26E89F7E003E7C0C /* FLYPersonalBaseInfoCell.m */,
+				04C2E86B26E9E511003E7C0C /* FLYServiceRecordCell.h */,
+				04C2E86C26E9E511003E7C0C /* FLYServiceRecordCell.m */,
+				04C2E87226E9FA93003E7C0C /* FLYDeviceListCell.h */,
+				04C2E87326E9FA93003E7C0C /* FLYDeviceListCell.m */,
+				04C2E87E26EAF894003E7C0C /* FLYDeviceDetailCell.h */,
+				04C2E87F26EAF894003E7C0C /* FLYDeviceDetailCell.m */,
+				04C2E88426EB08C7003E7C0C /* FLYDeviceHeaderView.h */,
+				04C2E88526EB08C7003E7C0C /* FLYDeviceHeaderView.m */,
+				04BEC512273291C900C72188 /* FLYPhysiologicalCell.h */,
+				04BEC513273291C900C72188 /* FLYPhysiologicalCell.m */,
+				04558A7F2733AEF400C9F918 /* FLYPhysiologicalHistoryCell.h */,
+				04558A802733AEF400C9F918 /* FLYPhysiologicalHistoryCell.m */,
+				04558A822733B94800C9F918 /* FLYYearMonthHeaderView.h */,
+				04558A832733B94800C9F918 /* FLYYearMonthHeaderView.m */,
+				04558A8E2733D35900C9F918 /* FLYDeviceClassificationCell.h */,
+				04558A8F2733D35900C9F918 /* FLYDeviceClassificationCell.m */,
+				04558AA12735126300C9F918 /* FLYTrackHistoryCell.h */,
+				04558AA22735126300C9F918 /* FLYTrackHistoryCell.m */,
+				047645AB2744DF9D00EFBCAA /* FLYChatCell.h */,
+				047645AC2744DF9D00EFBCAA /* FLYChatCell.m */,
+				048658622754A48400BF296F /* FLYDeviceRecordCell.h */,
+				048658632754A48400BF296F /* FLYDeviceRecordCell.m */,
+				04F1CC9D2790186A007C25C0 /* FLYVideoCell.h */,
+				04F1CC9E2790186A007C25C0 /* FLYVideoCell.m */,
+				043F1A6B2952A24D00F57F9A /* FLYBoxMenuCell.h */,
+				043F1A6C2952A24D00F57F9A /* FLYBoxMenuCell.m */,
+				043F1A742952A83F00F57F9A /* FLYBoxTimeCell.h */,
+				043F1A752952A83F00F57F9A /* FLYBoxTimeCell.m */,
+				043F1A7A2952B32300F57F9A /* FLYMedicationRecordCell.h */,
+				043F1A7B2952B32300F57F9A /* FLYMedicationRecordCell.m */,
+				043F1A802952D7E200F57F9A /* FLYDrugCell.h */,
+				043F1A812952D7E200F57F9A /* FLYDrugCell.m */,
+				043F1A892952E83F00F57F9A /* FLYAddDrugCell.h */,
+				043F1A8A2952E83F00F57F9A /* FLYAddDrugCell.m */,
+				043F1A8F2952F06E00F57F9A /* FLYDrugRemindCell.h */,
+				043F1A902952F06E00F57F9A /* FLYDrugRemindCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04C2E84C26E8A2B3003E7C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046D19C826E7377000D9FD46 /* FLYBaseViewController.h */,
+				046D19C926E7377000D9FD46 /* FLYBaseViewController.m */,
+				042879B92775B865001069C0 /* FLYBaseTableViewController.h */,
+				042879BA2775B865001069C0 /* FLYBaseTableViewController.m */,
+				0415089D277561E100D58078 /* FLYBaseCollectionViewController.h */,
+				0415089E277561E100D58078 /* FLYBaseCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04C2E84D26E8A2B5003E7C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046D19AE26E7061000D9FD46 /* FLYExceptionView.h */,
+				046D19AF26E7061000D9FD46 /* FLYExceptionView.m */,
+				04C2E83E26E898A4003E7C0C /* FLYCustomSegmentBar.h */,
+				04C2E83F26E898A4003E7C0C /* FLYCustomSegmentBar.m */,
+				04C2E85C26E8AAC8003E7C0C /* FLYFilterBar.h */,
+				04C2E85D26E8AAC8003E7C0C /* FLYFilterBar.m */,
+				04C2E85F26E8BCBB003E7C0C /* FLYFilterItemView.h */,
+				04C2E86026E8BCBB003E7C0C /* FLYFilterItemView.m */,
+				04C2E86226E9B882003E7C0C /* FLYFilterTimeView.h */,
+				04C2E86326E9B882003E7C0C /* FLYFilterTimeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C2E84E26E8A2B9003E7C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E85226E8A366003E7C0C /* FLYKeyValueModel.h */,
+				04C2E85326E8A366003E7C0C /* FLYKeyValueModel.m */,
+				04729B5E2744A690007D0F48 /* FLYModel.h */,
+				04729B5F2744A690007D0F48 /* FLYModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04C2E85826E8A99A003E7C0C /* 服务记录 */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E85926E8A9CF003E7C0C /* FLYServiceRecordViewController.h */,
+				04C2E85A26E8A9CF003E7C0C /* FLYServiceRecordViewController.m */,
+			);
+			path = "服务记录";
+			sourceTree = "<group>";
+		};
+		04C2E86E26E9F888003E7C0C /* 设备管理 */ = {
+			isa = PBXGroup;
+			children = (
+				04558A8B2733D04A00C9F918 /* FLYDeviceClassificationViewController.h */,
+				04558A8C2733D04A00C9F918 /* FLYDeviceClassificationViewController.m */,
+				04C2E86F26E9F8C2003E7C0C /* FLYDeviceListViewController.h */,
+				04C2E87026E9F8C2003E7C0C /* FLYDeviceListViewController.m */,
+				04C2E87B26EAF355003E7C0C /* FLYDeviceDetailViewController.h */,
+				04C2E87C26EAF355003E7C0C /* FLYDeviceDetailViewController.m */,
+			);
+			path = "设备管理";
+			sourceTree = "<group>";
+		};
+		04C2E88726EB2050003E7C0C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E88826EB206D003E7C0C /* FLYMessageCell.h */,
+				04C2E88926EB206D003E7C0C /* FLYMessageCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04C2E88B26EB3724003E7C0C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E88C26EB3735003E7C0C /* FLYMyCell.h */,
+				04C2E88D26EB3735003E7C0C /* FLYMyCell.m */,
+				04C2E89C26EB57EC003E7C0C /* FLYFamilyCell.h */,
+				04C2E89D26EB57EC003E7C0C /* FLYFamilyCell.m */,
+				04C2E8A226EB65AF003E7C0C /* FLYFamilyMemberCell.h */,
+				04C2E8A326EB65AF003E7C0C /* FLYFamilyMemberCell.m */,
+				04E50480277D7CC6007C603F /* FLYMemberLockCell.h */,
+				04E50481277D7CC6007C603F /* FLYMemberLockCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04C2E89826EB54D2003E7C0C /* 家属管理 */ = {
+			isa = PBXGroup;
+			children = (
+				04C2E89926EB5503003E7C0C /* FLYFamilyListViewController.h */,
+				04C2E89A26EB5503003E7C0C /* FLYFamilyListViewController.m */,
+				04C2E89F26EB64CF003E7C0C /* FLYFamilyMemberListViewController.h */,
+				04C2E8A026EB64CF003E7C0C /* FLYFamilyMemberListViewController.m */,
+				04C2E8A526EEF07E003E7C0C /* FLYAddMemberViewController.h */,
+				04C2E8A626EEF07E003E7C0C /* FLYAddMemberViewController.m */,
+				04E50486277D8AD8007C603F /* FLYLockAuthorizeViewController.h */,
+				04E50487277D8AD8007C603F /* FLYLockAuthorizeViewController.m */,
+				04C2E8A826EF0288003E7C0C /* FLYMemberDetailViewController.h */,
+				04C2E8A926EF0288003E7C0C /* FLYMemberDetailViewController.m */,
+			);
+			path = "家属管理";
+			sourceTree = "<group>";
+		};
+		04C80D3226F24B6800FD1F62 /* FLYUser */ = {
+			isa = PBXGroup;
+			children = (
+				045D511826F1B96B00041946 /* FLYUser.h */,
+				045D511926F1B96B00041946 /* FLYUser.m */,
+				04C80D3326F24B8D00FD1F62 /* FLYUserAction.h */,
+				04C80D3426F24B8D00FD1F62 /* FLYUserAction.m */,
+			);
+			path = FLYUser;
+			sourceTree = "<group>";
+		};
+		04E50479277AD520007C603F /* 忘记密码 */ = {
+			isa = PBXGroup;
+			children = (
+				04E5047A277AD5A7007C603F /* FLYForgetLockPasswordViewController.h */,
+				04E5047B277AD5A7007C603F /* FLYForgetLockPasswordViewController.m */,
+			);
+			path = "忘记密码";
+			sourceTree = "<group>";
+		};
+		04E504922783E5B5007C603F /* FLYSegmentBar */ = {
+			isa = PBXGroup;
+			children = (
+				04E504932783E5B5007C603F /* FLYSegmentBar.h */,
+				04E504962783E5B5007C603F /* FLYSegmentBar.m */,
+				04E504952783E5B5007C603F /* FLYSegmentBarConfig.h */,
+				04E504982783E5B5007C603F /* FLYSegmentBarConfig.m */,
+				04E504972783E5B5007C603F /* FLYPageScrollView.h */,
+				04E504942783E5B5007C603F /* FLYPageScrollView.m */,
+			);
+			path = FLYSegmentBar;
+			sourceTree = "<group>";
+		};
+		04FF4AB227708610008D4476 /* Encryption(加密解密) */ = {
+			isa = PBXGroup;
+			children = (
+				04FF4AB327708610008D4476 /* FLYRSA.h */,
+				04FF4AB427708610008D4476 /* FLYHash.h */,
+				04FF4AB527708610008D4476 /* FLYAES.h */,
+				04FF4AB627708610008D4476 /* FLYBase64.h */,
+				04FF4AB727708610008D4476 /* FLYRSA.m */,
+				04FF4AB827708610008D4476 /* FLYHash.m */,
+				04FF4AB927708610008D4476 /* FLYAES.m */,
+				04FF4ABA27708610008D4476 /* FLYBase64.m */,
+			);
+			path = "Encryption(加密解密)";
+			sourceTree = "<group>";
+		};
+		0FD18BA9CABAD6B13483BE28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9443B86D8F65D0E4B4B3188 /* Pods-ProvideAged.debug.xcconfig */,
+				13E58AF2AA420D275EFC6953 /* Pods-ProvideAged.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79150043B40EB645CF431492 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E7A90FDED64A1BE4CEDB9F /* Pods_ProvideAged.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0407516126E60485005A97FF /* ProvideAged */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0407517B26E6048B005A97FF /* Build configuration list for PBXNativeTarget "ProvideAged" */;
+			buildPhases = (
+				A6FEA591FF3A8389D5D481DE /* [CP] Check Pods Manifest.lock */,
+				0407515E26E60485005A97FF /* Sources */,
+				0407515F26E60485005A97FF /* Frameworks */,
+				0407516026E60485005A97FF /* Resources */,
+				723CD4A738A8A773D13E9FA2 /* [CP] Embed Pods Frameworks */,
+				041508782771BC3600D58078 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProvideAged;
+			productName = ProvideAged;
+			productReference = 0407516226E60485005A97FF /* ProvideAged.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0407515A26E60485005A97FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FLY;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					0407516126E60485005A97FF = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1310;
+					};
+				};
+			};
+			buildConfigurationList = 0407515D26E60485005A97FF /* Build configuration list for PBXProject "ProvideAged" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0407515926E60485005A97FF;
+			productRefGroup = 0407516326E60485005A97FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0407516126E60485005A97FF /* ProvideAged */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0407516026E60485005A97FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0407517526E6048B005A97FF /* LaunchScreen.storyboard in Resources */,
+				0407517226E6048B005A97FF /* Assets.xcassets in Resources */,
+				045D5793277056C2003B240D /* AMap.bundle in Resources */,
+				046D194926E6253700D9FD46 /* Tabbar.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		723CD4A738A8A773D13E9FA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProvideAged/Pods-ProvideAged-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProvideAged/Pods-ProvideAged-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProvideAged/Pods-ProvideAged-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6FEA591FF3A8389D5D481DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProvideAged-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0407515E26E60485005A97FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04796B9E273B722600F51EB7 /* FLYTrackView.m in Sources */,
+				041311AA2AB049C600A4B4A0 /* FLYFingerprintTipsViewController.m in Sources */,
+				04833F262784500400963E5A /* NSString+FLYExtension.m in Sources */,
+				046D197726E6FE7E00D9FD46 /* UITableView+FLYRefresh.m in Sources */,
+				04E5048B277D9250007C603F /* FLYSwitchCell.m in Sources */,
+				04AA622126F58AF0006479D2 /* FLYMemberModel.m in Sources */,
+				04C2E89126EB3841003E7C0C /* FLYMyModel.m in Sources */,
+				04BEC522273386C300C72188 /* FLYPhysiologicalChartView.m in Sources */,
+				047EA3CB273E03BE009C26C7 /* FLYHealthModel.m in Sources */,
+				046D198026E6FE7E00D9FD46 /* UIView+FLYLayoutConstraint.m in Sources */,
+				046D19A926E6FEFC00D9FD46 /* FLYDeviceManager.m in Sources */,
+				04558A9A2734DBD200C9F918 /* FLYAnnotationModel.m in Sources */,
+				043F1AA62954066C00F57F9A /* FLYQueryListView.m in Sources */,
+				046D197E26E6FE7E00D9FD46 /* UIView+FLYFrame.m in Sources */,
+				043F1A7C2952B32300F57F9A /* FLYMedicationRecordCell.m in Sources */,
+				046D197B26E6FE7E00D9FD46 /* NSDate+FLYExtension.m in Sources */,
+				046D197826E6FE7E00D9FD46 /* NSArray+FLYUnicode.m in Sources */,
+				046D197526E6FE7E00D9FD46 /* NSString+FLYVerification.m in Sources */,
+				04C2E86126E8BCBB003E7C0C /* FLYFilterItemView.m in Sources */,
+				04BEC51F27337ACB00C72188 /* UIColor+FLYHex.m in Sources */,
+				04F1CC9F2790186A007C25C0 /* FLYVideoCell.m in Sources */,
+				043F1A972952FBFB00F57F9A /* FLYWhiteTitleNavView.m in Sources */,
+				0443392B26F333B5004ED0EE /* FLYMapViewController.m in Sources */,
+				047645AD2744DF9D00EFBCAA /* FLYChatCell.m in Sources */,
+				046D198126E6FE7E00D9FD46 /* UICollectionView+FLYRefresh.m in Sources */,
+				04C2E8A426EB65AF003E7C0C /* FLYFamilyMemberCell.m in Sources */,
+				04C2E84026E898A4003E7C0C /* FLYCustomSegmentBar.m in Sources */,
+				046D87C0272FDA5A0069680C /* FLYNetworkTool.m in Sources */,
+				04558A8D2733D04A00C9F918 /* FLYDeviceClassificationViewController.m in Sources */,
+				04558A972734D67300C9F918 /* FLYSendMessageViewController.m in Sources */,
+				046D197D26E6FE7E00D9FD46 /* UIAlertController+FLYExtension.m in Sources */,
+				04C2E89E26EB57EC003E7C0C /* FLYFamilyCell.m in Sources */,
+				043F1A6A2952A09400F57F9A /* FLYBoxMenuModel.m in Sources */,
+				0407516726E60485005A97FF /* AppDelegate.m in Sources */,
+				046D19AA26E6FEFC00D9FD46 /* FLYPhotoManager.m in Sources */,
+				04150898277452C000D58078 /* FLYOpenDoorMenuView.m in Sources */,
+				04C2E89B26EB5503003E7C0C /* FLYFamilyListViewController.m in Sources */,
+				041311A72AB042F900A4B4A0 /* FLYFingerprintModel.m in Sources */,
+				04833F29278453F800963E5A /* FLYOpenRecordModel.m in Sources */,
+				041508862772C85F00D58078 /* FLYZiGuangNetwork.m in Sources */,
+				046D19A626E6FEFC00D9FD46 /* FLYAudioTools.m in Sources */,
+				04729B602744A690007D0F48 /* FLYModel.m in Sources */,
+				04C2E85B26E8A9CF003E7C0C /* FLYServiceRecordViewController.m in Sources */,
+				04E3CA2C275078670019D4AA /* FLYVersionModel.m in Sources */,
+				04558A812733AEF400C9F918 /* FLYPhysiologicalHistoryCell.m in Sources */,
+				04C2E88E26EB3735003E7C0C /* FLYMyCell.m in Sources */,
+				042879D52779A6BB001069C0 /* FLYAuthorizeDetailViewController.m in Sources */,
+				04C2E86426E9B882003E7C0C /* FLYFilterTimeView.m in Sources */,
+				04E50478277AB209007C603F /* FLYScreenListView.m in Sources */,
+				046D1A0126E76A8000D9FD46 /* FLYElderlyMenuButtom.m in Sources */,
+				048658672754B4C100BF296F /* FLYBedRecordModel.m in Sources */,
+				04FF4ABD27708610008D4476 /* FLYAES.m in Sources */,
+				04C2E84726E89C36003E7C0C /* FLYPersonalBaseInfoViewController.m in Sources */,
+				04E5049A2783E5B5007C603F /* FLYSegmentBar.m in Sources */,
+				0407517826E6048B005A97FF /* main.m in Sources */,
+				0443391E26F31158004ED0EE /* FLYUserModel.m in Sources */,
+				04C80D4626F2DA7A00FD1F62 /* UIImageView+SDWebImage.m in Sources */,
+				046D19AB26E6FEFC00D9FD46 /* FLYTime.m in Sources */,
+				042879BB2775B865001069C0 /* FLYBaseTableViewController.m in Sources */,
+				046D197426E6FE7E00D9FD46 /* NSString+FLYEncryption.m in Sources */,
+				04558A9D2734F4E900C9F918 /* FLYMapDetailView.m in Sources */,
+				0443392126F31D69004ED0EE /* FLYElderModel.m in Sources */,
+				046D19F526E74C4F00D9FD46 /* FLYPersonalHomeViewController.m in Sources */,
+				04C2E88026EAF894003E7C0C /* FLYDeviceDetailCell.m in Sources */,
+				04FF4AB1277063B4008D4476 /* TGNetworkTool.m in Sources */,
+				04796B98273A85C400F51EB7 /* FLYTrackViewController.m in Sources */,
+				041508952774246700D58078 /* FLYOpenDoorView.m in Sources */,
+				04E504A12783F924007C603F /* FLYOpenLockModel.m in Sources */,
+				046D197926E6FE7E00D9FD46 /* UIImage+FLYExtension.m in Sources */,
+				043F1A852952E17C00F57F9A /* FLYAddDrugViewController.m in Sources */,
+				04E3CA2F27507C540019D4AA /* FLYVersionUpdateView.m in Sources */,
+				046D199026E6FEBB00D9FD46 /* FLYButton.m in Sources */,
+				042879BE2775B894001069C0 /* FLYTempAuthorizeViewController.m in Sources */,
+				043F1A792952AD5700F57F9A /* FLYMedicationRecordViewController.m in Sources */,
+				0415087C2772C05A00D58078 /* FLYVideoListViewController.m in Sources */,
+				043F1AA029530F7600F57F9A /* FLYRemindSelectView.m in Sources */,
+				04833F2C27854AFE00963E5A /* FLYOpenDoorResultView.m in Sources */,
+				042879CE27798A4F001069C0 /* FLYInputTipsCell.m in Sources */,
+				04C2E87126E9F8C2003E7C0C /* FLYDeviceListViewController.m in Sources */,
+				04C2E8A126EB64CF003E7C0C /* FLYFamilyMemberListViewController.m in Sources */,
+				046D193926E6213100D9FD46 /* FLYTabBarController.m in Sources */,
+				04558A872733C8EA00C9F918 /* FLYYearMonthGroupModel.m in Sources */,
+				043F1A822952D7E200F57F9A /* FLYDrugCell.m in Sources */,
+				04C2E86D26E9E511003E7C0C /* FLYServiceRecordCell.m in Sources */,
+				04796B9B273B64C400F51EB7 /* FLYTrackModel.m in Sources */,
+				046D19FB26E7556200D9FD46 /* FLYElderlyBaseInfoView.m in Sources */,
+				04E74ADF2A930B01000FE706 /* FLYInputFaceViewController.m in Sources */,
+				046D19F826E7522A00D9FD46 /* FLYCircularView.m in Sources */,
+				043576E3295C31E200C8DFA5 /* FLYMedicationRecordModel.m in Sources */,
+				04558A7E2733A9D600C9F918 /* FLYPhysiologicalHistoryListViewController.m in Sources */,
+				04BEC51927329BE300C72188 /* FLYPhysiologicalChartViewController.m in Sources */,
+				042879CB277987E9001069C0 /* FLYInputCell.m in Sources */,
+				041508832772C84900D58078 /* FLYZiGuangManager.m in Sources */,
+				04C2E85E26E8AAC8003E7C0C /* FLYFilterBar.m in Sources */,
+				04C2E87A26EA0C98003E7C0C /* FLYFilterDeviceButton.m in Sources */,
+				04C2E85426E8A366003E7C0C /* FLYKeyValueModel.m in Sources */,
+				043F1A882952E54D00F57F9A /* FLYAddDrugModel.m in Sources */,
+				04C2E89426EB4ACC003E7C0C /* FLYMyHeaderView.m in Sources */,
+				04E5047C277AD5A7007C603F /* FLYForgetLockPasswordViewController.m in Sources */,
+				04796B8F273A3E1A00F51EB7 /* FLYStepModel.m in Sources */,
+				046D19FE26E75BB600D9FD46 /* FLYElderlyMenuView.m in Sources */,
+				04558A902733D35900C9F918 /* FLYDeviceClassificationCell.m in Sources */,
+				04C2E8A726EEF07E003E7C0C /* FLYAddMemberViewController.m in Sources */,
+				046D19BF26E7162800D9FD46 /* UIBarButtonItem+FLYExtension.m in Sources */,
+				046D198E26E6FEBB00D9FD46 /* FLYLabel.m in Sources */,
+				0415089227741D2200D58078 /* FLYOpenDoorViewController.m in Sources */,
+				043E8511279808980018EA28 /* FLYUtility.m in Sources */,
+				0415089C277470AD00D58078 /* FLYTempAuthorizeListViewController.m in Sources */,
+				043F1A9D295306B600F57F9A /* FLYTextField.m in Sources */,
+				043F1A9A2953040300F57F9A /* FLYDrugQueryView.m in Sources */,
+				0443393126F34496004ED0EE /* FLYDeviceModel.m in Sources */,
+				0443393726F3526C004ED0EE /* FLYDoorRecordModel.m in Sources */,
+				042879C427796328001069C0 /* FLYSelectCell.m in Sources */,
+				0443392426F32804004ED0EE /* FLYSysDicModel.m in Sources */,
+				0443392726F32FE2004ED0EE /* FLYServiceModel.m in Sources */,
+				04C2E87D26EAF355003E7C0C /* FLYDeviceDetailViewController.m in Sources */,
+				046D19A826E6FEFC00D9FD46 /* FLYTools.m in Sources */,
+				046D87BF272FDA5A0069680C /* FLYNetwork.m in Sources */,
+				043F1A702952A4BA00F57F9A /* FLYBoxSetupTimeViewController.m in Sources */,
+				0494166227842BFD0037AFE7 /* FLYAuthorizeModel.m in Sources */,
+				040D47022A9097990063DEC5 /* HealthReportViewController.m in Sources */,
+				04C80D3526F24B8D00FD1F62 /* FLYUserAction.m in Sources */,
+				046D19A726E6FEFC00D9FD46 /* FLYPopupView.m in Sources */,
+				04E50482277D7CC6007C603F /* FLYMemberLockCell.m in Sources */,
+				043F1A7F2952D46500F57F9A /* FLYDrugListViewController.m in Sources */,
+				04C2E86726E9CCAE003E7C0C /* UIView+FLYExtension.m in Sources */,
+				046D19C726E7368E00D9FD46 /* FLYViewController.m in Sources */,
+				046D197C26E6FE7E00D9FD46 /* NSDictionary+FLYUnicode.m in Sources */,
+				04C2E88A26EB206D003E7C0C /* FLYMessageCell.m in Sources */,
+				04558A932733DB9600C9F918 /* FLYDeviceClassificationModel.m in Sources */,
+				043F1A942952FA5F00F57F9A /* FLYAddDrugRemindViewController.m in Sources */,
+				043F1A8B2952E83F00F57F9A /* FLYAddDrugCell.m in Sources */,
+				04C2E88626EB08C7003E7C0C /* FLYDeviceHeaderView.m in Sources */,
+				0443392E26F338E9004ED0EE /* FLYDeviceStatusModel.m in Sources */,
+				04C80D3F26F255BA00FD1F62 /* FLYLeftTextField.m in Sources */,
+				04BEC51C273375C800C72188 /* FLYPhysiologicalCircleView.m in Sources */,
+				045D511A26F1B96B00041946 /* FLYUser.m in Sources */,
+				04AA621E26F587A2006479D2 /* FLYFamilyModel.m in Sources */,
+				0488CE4226F1A0E9000CE201 /* FLYLoginViewController.m in Sources */,
+				042879C127795363001069C0 /* FLYOptionCell.m in Sources */,
+				041508802772C83300D58078 /* FLYZiGuang.m in Sources */,
+				04FF4ABE27708610008D4476 /* FLYBase64.m in Sources */,
+				04E9768A2AB5A22E0007B2B5 /* FLYFingerprintNameViewController.m in Sources */,
+				043F1A762952A83F00F57F9A /* FLYBoxTimeCell.m in Sources */,
+				04E5049B2783E5B5007C603F /* FLYSegmentBarConfig.m in Sources */,
+				046D197F26E6FE7E00D9FD46 /* UIView+FLYLayer.m in Sources */,
+				046D1A0426E76CD100D9FD46 /* FLYDeviceStatusView.m in Sources */,
+				043F1A732952A59300F57F9A /* FLYBoxTimeModel.m in Sources */,
+				043F1A8E2952ECA800F57F9A /* FLYDrugRemindViewController.m in Sources */,
+				04E50488277D8AD8007C603F /* FLYLockAuthorizeViewController.m in Sources */,
+				046D19E026E7393600D9FD46 /* FLYHomeViewController.m in Sources */,
+				0443393426F351D5004ED0EE /* FLYWarningModel.m in Sources */,
+				048658642754A48400BF296F /* FLYDeviceRecordCell.m in Sources */,
+				046D193626E6211E00D9FD46 /* FLYNavigationController.m in Sources */,
+				046D198F26E6FEBB00D9FD46 /* FLYTextView.m in Sources */,
+				04C2E87426E9FA94003E7C0C /* FLYDeviceListCell.m in Sources */,
+				0488CE3E26F1896A000CE201 /* FLYOpinionViewController.m in Sources */,
+				04C2E84B26E89F7E003E7C0C /* FLYPersonalBaseInfoCell.m in Sources */,
+				04C2E87726E9FBD0003E7C0C /* FLYFilterDeviceView.m in Sources */,
+				043576DD295C155B00C8DFA5 /* FLYDrugModel.m in Sources */,
+				041508A627756B2000D58078 /* FLYTempAuthorizeCell.m in Sources */,
+				046D199126E6FEBB00D9FD46 /* FLYCountdownButton.m in Sources */,
+				040D47082A90980B0063DEC5 /* HealthTitleView.m in Sources */,
+				0415089F277561E100D58078 /* FLYBaseCollectionViewController.m in Sources */,
+				041311A42AAC047D00A4B4A0 /* FLYFingerprintViewController.m in Sources */,
+				04558AA027350ED400C9F918 /* FLYStepHistoryViewController.m in Sources */,
+				04BEC514273291C900C72188 /* FLYPhysiologicalCell.m in Sources */,
+				04E5049E2783F880007C603F /* FLYDoorLockModel.m in Sources */,
+				043F1A912952F06E00F57F9A /* FLYDrugRemindCell.m in Sources */,
+				046D19CA26E7377000D9FD46 /* FLYBaseViewController.m in Sources */,
+				04E976872AB58CCA0007B2B5 /* FLYAddFingerprintViewController.m in Sources */,
+				041508892772C8A100D58078 /* FLYZiGuangModel.m in Sources */,
+				04C2E84326E89B9C003E7C0C /* FLYPhysiologicalViewController.m in Sources */,
+				04729B632744A6B9007D0F48 /* FLYChatRecordModel.m in Sources */,
+				046D19A526E6FEFC00D9FD46 /* FLYFileManager.m in Sources */,
+				043F1A6729529ED800F57F9A /* FLYMedicineBoxMenuViewController.m in Sources */,
+				046D197626E6FE7E00D9FD46 /* UIImageView+FLYExtension.m in Sources */,
+				047A39CE27326181009F484A /* FLYMotionView.m in Sources */,
+				043F1A6D2952A24D00F57F9A /* FLYBoxMenuCell.m in Sources */,
+				04E504992783E5B5007C603F /* FLYPageScrollView.m in Sources */,
+				04FF4ABB27708610008D4476 /* FLYRSA.m in Sources */,
+				043576E6295D841000C8DFA5 /* FLYDrugRemindModel.m in Sources */,
+				04558AA32735126300C9F918 /* FLYTrackHistoryCell.m in Sources */,
+				042879D82779B97A001069C0 /* FLYOpenRecordListViewController.m in Sources */,
+				0486586127549A5500BF296F /* FLYDeviceSegmentBar.m in Sources */,
+				043F1A632951BBD400F57F9A /* FLYMedicineBoxView.m in Sources */,
+				04FF4ABC27708610008D4476 /* FLYHash.m in Sources */,
+				0443393A26F42FE5004ED0EE /* FLYMessageModel.m in Sources */,
+				04558A842733B94800C9F918 /* FLYYearMonthHeaderView.m in Sources */,
+				040D47072A90980B0063DEC5 /* DatePickerView.m in Sources */,
+				04F1CCA2279021BE007C25C0 /* FLYVideoModel.m in Sources */,
+				046D197A26E6FE7E00D9FD46 /* UIButton+FLYExtension.m in Sources */,
+				04C2E8AA26EF0288003E7C0C /* FLYMemberDetailViewController.m in Sources */,
+				04E50485277D878F007C603F /* FLYHouseLockModel.m in Sources */,
+				046D19E326E7395800D9FD46 /* FLYMessageViewController.m in Sources */,
+				046D19B026E7061100D9FD46 /* FLYExceptionView.m in Sources */,
+				046D19E626E7396900D9FD46 /* FLYMyViewController.m in Sources */,
+				043F1AA32953F19D00F57F9A /* FLYTimePointView.m in Sources */,
+				0468C4B729C9A78600C61492 /* FLYDeviceLocationModel.m in Sources */,
+				047EA3CE27420937009C26C7 /* FLYLineChartView.m in Sources */,
+				043576E0295C29C000C8DFA5 /* FLYBoxInfoModel.m in Sources */,
+				04E504912783E418007C603F /* FLYOpenDoorParentViewController.m in Sources */,
+				04C2E83726E85E7E003E7C0C /* FLYHealthRecordViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0407517326E6048B005A97FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0407517426E6048B005A97FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0407517926E6048B005A97FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0407517A26E6048B005A97FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0407517C26E6048B005A97FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9443B86D8F65D0E4B4B3188 /* Pods-ProvideAged.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ProvideAged/ProvideAged.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.2.1;
+				DEVELOPMENT_TEAM = BA2YJ3ZVTF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ProvideAged/Frameworks",
+					"$(PROJECT_DIR)/ProvideAged/Frameworks/探鸽",
+					"$(PROJECT_DIR)/ProvideAged/Tools/紫光",
+				);
+				GCC_PREFIX_HEADER = "${SRCROOT}/ProvideAged/Constant/PrefixHeader.pch";
+				INFOPLIST_FILE = ProvideAged/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "智爱云看护";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"jcore-ios-2.7.1\"",
+					"-l\"jpush-ios-4.3.0\"",
+					"-l\"resolv\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BRPickerView\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"Charts\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"AppTrackingTransparency\"",
+					"-weak_framework",
+					"\"UserNotifications\"",
+					"-force_load",
+					"$(PROJECT_DIR)/ProvideAged/Frameworks/探鸽/TGIOT.framework/TGIOT",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenhan.ProvideAged;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProvideAged/Main/Home/View/ProvideAged-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0407517D26E6048B005A97FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E58AF2AA420D275EFC6953 /* Pods-ProvideAged.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ProvideAged/ProvideAged.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.2.1;
+				DEVELOPMENT_TEAM = BA2YJ3ZVTF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ProvideAged/Frameworks",
+					"$(PROJECT_DIR)/ProvideAged/Frameworks/探鸽",
+					"$(PROJECT_DIR)/ProvideAged/Tools/紫光",
+				);
+				GCC_PREFIX_HEADER = "${SRCROOT}/ProvideAged/Constant/PrefixHeader.pch";
+				INFOPLIST_FILE = ProvideAged/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "智爱云看护";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"jcore-ios-2.7.1\"",
+					"-l\"jpush-ios-4.3.0\"",
+					"-l\"resolv\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BRPickerView\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"Charts\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"AppTrackingTransparency\"",
+					"-weak_framework",
+					"\"UserNotifications\"",
+					"-force_load",
+					"$(PROJECT_DIR)/ProvideAged/Frameworks/探鸽/TGIOT.framework/TGIOT",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenhan.ProvideAged;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProvideAged/Main/Home/View/ProvideAged-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0407515D26E60485005A97FF /* Build configuration list for PBXProject "ProvideAged" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0407517926E6048B005A97FF /* Debug */,
+				0407517A26E6048B005A97FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0407517B26E6048B005A97FF /* Build configuration list for PBXNativeTarget "ProvideAged" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0407517C26E6048B005A97FF /* Debug */,
+				0407517D26E6048B005A97FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0407515A26E60485005A97FF /* Project object */;
+}

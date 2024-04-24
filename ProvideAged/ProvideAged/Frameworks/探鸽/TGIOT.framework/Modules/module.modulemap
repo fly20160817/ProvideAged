@@ -1,0 +1,11 @@
+framework module TGIOT {
+  umbrella header "TGIOT.h"
+
+  export *
+  module * { export * }
+}
+
+module TGIOT.Swift {
+    header "TGIOT-Swift.h"
+    requires objc
+}

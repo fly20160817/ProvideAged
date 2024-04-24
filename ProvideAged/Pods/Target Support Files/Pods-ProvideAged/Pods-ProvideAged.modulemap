@@ -1,0 +1,6 @@
+framework module Pods_ProvideAged {
+  umbrella header "Pods-ProvideAged-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module ICINSmartLockSDK {
+  umbrella header "ICINSmartLockSDK.h"
+
+  export *
+  module * { export * }
+}
